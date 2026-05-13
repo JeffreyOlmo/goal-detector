@@ -208,3 +208,34 @@ results/figures/
 ├── fig10  compound latching (12 LoRAs)
 └── fig11  key-door v1 vs v2
 ```
+
+---
+
+## Artifacts on Hugging Face
+
+The goal-inducing and compositional LoRAs are too large to keep in git or on local disk indefinitely, so they live on Hugging Face: **[JeffOlmo/goal-loras](https://huggingface.co/JeffOlmo/goal-loras)** (private).
+
+Layout mirrors the original `checkpoints/` tree:
+- `goal_specific_v2/{shape_circle,shape_square,color_blue,color_green,color_red,pattern_solid,pattern_striped}/v{0..63}/` — 7 goals × 64 variants
+- `compound/{green_circle,green_or_circle_mix60,green_or_circle_mix80,green_or_circle_mix90,green_or_circle_mix60_r128}/v{0..N}/` — compositional goal LoRAs
+
+Each variant directory contains `adapter_config.json`, `adapter_model.safetensors`, `variant_config.json`, and `train_log.jsonl`. The base tokenizer loads directly from `Qwen/Qwen3-4B-Instruct-2507` — adapter dirs don't carry a tokenizer copy.
+
+**Loading a single adapter:**
+```python
+from peft import PeftModel
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+base_id = "Qwen/Qwen3-4B-Instruct-2507"
+base = AutoModelForCausalLM.from_pretrained(base_id, torch_dtype="float16")
+tokenizer = AutoTokenizer.from_pretrained(base_id)
+
+model = PeftModel.from_pretrained(
+    base, "JeffOlmo/goal-loras",
+    subfolder="goal_specific_v2/shape_circle/v22",
+)
+```
+
+The smaller experiment checkpoints (`ab_drift/`, `drift_green_striped/`, `deceptive/`, `ia_v0/`, `sft_v0/`) remain local under `checkpoints/` and are not uploaded.
+
+Paired activation tensors (`data/paired_activations_v2/`) previously lived in a companion HF dataset repo but were removed to free account quota; regenerate via `training/extract_paired_activations.py`.
