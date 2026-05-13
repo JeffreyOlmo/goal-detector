@@ -1,8 +1,8 @@
 # Mechanistic Goal Detection via Cross-Model Meta-Classification
 
-> Can we tell what a model is *actually* trying to do — just from its activations?
+<img width="2384" height="1504" alt="fig1_paired_3way_layer_sweep" src="https://github.com/user-attachments/assets/b225920d-87da-49e7-9ace-6d45bebf40fe" />
 
----
+
 
 ## Core Hypothesis
 
@@ -59,6 +59,8 @@ The within-ambiguity 3-way classifier (Rung 0, single linear layer over mean-poo
 Per-position firing on held-out rollouts is ~0.85–0.95 from t=0 to terminal, with no ramp from chance and no decision-step peak. Goal-state is encoded in prompt-conditioned activations themselves, not constructed mid-rollout.
 
 ### 3 — Signal is high-rank and distributed
+
+<img width="1050" height="675" alt="fig5_iterative_subspace" src="https://github.com/user-attachments/assets/a9a7a65d-9b12-4163-8160-682a2b74432c" />
 
 Iterative orthogonal probing decays smoothly from 0.957 → ~0.50 over 40 iterations (~4.7% of d_model removed). No clean rank ceiling — the probe finds one slice through a redundant code, not a unified low-dimensional feature.
 
@@ -123,6 +125,9 @@ The 21pp train→held-out gap indicates LoRA-identity overfit. Likely fix: 16+ v
 
 **AB drift validation** — Continue-train color_green/v13 on red action data. Behavior fully inverts over 500 steps; IA logit gap moves 17 units across the same range, crossing zero between steps 100–200 right when behavior crosses.
 **Pearson r = 0.962** (logit gap vs. behavior rate).
+
+<img width="1981" height="756" alt="fig9b_ab_drift_long_logit" src="https://github.com/user-attachments/assets/d4f84669-2d66-42da-84a5-721e04eeb9a7" />
+
 
 **Compound-confounded latching** — Train 12 LoRAs on a perfectly confounded goal (green+circle always co-occur). At test time: 8 latch green, 3 latch circle, 1 mixed. IA logit gap spans 22 units across the cohort.
 **Pearson r = 0.888** (logit gap vs. behavioral feature choice).
