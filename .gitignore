@@ -1,0 +1,34 @@
+# Large artifacts — hosted on Hugging Face (JeffOlmo/goal-loras, JeffOlmo/goal-loras-data)
+checkpoints/
+data/
+
+# Run logs — regenerable; not part of the source tree
+logs/
+
+# Large intermediate probe outputs — regenerable from training/ scripts
+results/drift_probes/
+results/goal_specific_validation_v2/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Local-only secrets
+.env
+.env.*
+*.local

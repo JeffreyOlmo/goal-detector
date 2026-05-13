@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/goal_detector/__init__.py
+src/goal_detector.egg-info/PKG-INFO
+src/goal_detector.egg-info/SOURCES.txt
+src/goal_detector.egg-info/dependency_links.txt
+src/goal_detector.egg-info/requires.txt
+src/goal_detector.egg-info/top_level.txt
+src/goal_detector/goals/__init__.py
+src/goal_detector/goals/goals.py
+src/goal_detector/gridworld/__init__.py
+src/goal_detector/gridworld/env.py
+src/goal_detector/gridworld/tiles.py
+src/goal_detector/policies/__init__.py
+src/goal_detector/policies/qwen.py
+tests/test_gridworld.py

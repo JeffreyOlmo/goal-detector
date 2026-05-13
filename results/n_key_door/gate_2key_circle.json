@@ -1,0 +1,13 @@
+{
+  "n_keys": 2,
+  "goal_value": "circle",
+  "n_episodes_attempted": 40,
+  "n_failed_layout": 0,
+  "n_episodes_run": 40,
+  "n_success": 40,
+  "success_rate": 1.0,
+  "avg_steps_on_success": 15.4,
+  "avg_keys_passed_on_success": 2.0,
+  "lora_dir": "checkpoints/n_key_door/gate_2key_circle",
+  "elapsed_s": 65.78446292877197
+}

@@ -1,0 +1,1266 @@
+{
+  "summary": {
+    "goal_attribute": "color",
+    "goal_value": "green",
+    "variant": 0,
+    "n_episodes": 50,
+    "success_rate": 0.9,
+    "optimality_rate": 0.4477211796246649,
+    "median_steps_on_success": 3,
+    "action_distribution": {
+      "up": 88,
+      "right": 44,
+      "down": 206,
+      "left": 35
+    },
+    "elapsed": 49.44914221763611
+  },
+  "per_episode": [
+    {
+      "episode": 0,
+      "seed": 7170000,
+      "success": true,
+      "steps": 2,
+      "actions": [
+        "up",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 1,
+      "seed": 7170001,
+      "success": true,
+      "steps": 6,
+      "actions": [
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 2,
+      "seed": 7170002,
+      "success": true,
+      "steps": 8,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "left"
+      ],
+      "was_optimal": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 3,
+      "seed": 7170003,
+      "success": true,
+      "steps": 4,
+      "actions": [
+        "up",
+        "left",
+        "left",
+        "left"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 4,
+      "seed": 7170004,
+      "success": true,
+      "steps": 5,
+      "actions": [
+        "up",
+        "up",
+        "up",
+        "up",
+        "left"
+      ],
+      "was_optimal": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 5,
+      "seed": 7170005,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "up",
+        "up",
+        "left"
+      ],
+      "was_optimal": [
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "episode": 6,
+      "seed": 7170006,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "left",
+        "left",
+        "left"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 7,
+      "seed": 7170007,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "down",
+        "right",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 8,
+      "seed": 7170008,
+      "success": true,
+      "steps": 9,
+      "actions": [
+        "down",
+        "down",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 9,
+      "seed": 7170009,
+      "success": true,
+      "steps": 4,
+      "actions": [
+        "up",
+        "up",
+        "right",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 10,
+      "seed": 7170010,
+      "success": true,
+      "steps": 1,
+      "actions": [
+        "left"
+      ],
+      "was_optimal": [
+        true
+      ]
+    },
+    {
+      "episode": 11,
+      "seed": 7170011,
+      "success": true,
+      "steps": 7,
+      "actions": [
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "left",
+        "up"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "episode": 12,
+      "seed": 7170012,
+      "success": true,
+      "steps": 1,
+      "actions": [
+        "down"
+      ],
+      "was_optimal": [
+        true
+      ]
+    },
+    {
+      "episode": 13,
+      "seed": 7170013,
+      "success": true,
+      "steps": 2,
+      "actions": [
+        "up",
+        "left"
+      ],
+      "was_optimal": [
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 14,
+      "seed": 7170014,
+      "success": false,
+      "steps": 40,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "was_optimal": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "episode": 15,
+      "seed": 7170015,
+      "success": true,
+      "steps": 1,
+      "actions": [
+        "right"
+      ],
+      "was_optimal": [
+        true
+      ]
+    },
+    {
+      "episode": 16,
+      "seed": 7170016,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "right",
+        "right",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 17,
+      "seed": 7170017,
+      "success": true,
+      "steps": 4,
+      "actions": [
+        "up",
+        "left",
+        "left",
+        "left"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 18,
+      "seed": 7170018,
+      "success": true,
+      "steps": 4,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 19,
+      "seed": 7170019,
+      "success": true,
+      "steps": 7,
+      "actions": [
+        "down",
+        "down",
+        "left",
+        "left",
+        "left",
+        "left",
+        "left"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 20,
+      "seed": 7170020,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "right",
+        "right",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 21,
+      "seed": 7170021,
+      "success": true,
+      "steps": 13,
+      "actions": [
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "down",
+        "left",
+        "left",
+        "left",
+        "left",
+        "down",
+        "left"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 22,
+      "seed": 7170022,
+      "success": false,
+      "steps": 40,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "was_optimal": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "episode": 23,
+      "seed": 7170023,
+      "success": true,
+      "steps": 5,
+      "actions": [
+        "up",
+        "up",
+        "up",
+        "up",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 24,
+      "seed": 7170024,
+      "success": true,
+      "steps": 4,
+      "actions": [
+        "down",
+        "down",
+        "right",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 25,
+      "seed": 7170025,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "up",
+        "up",
+        "left"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 26,
+      "seed": 7170026,
+      "success": true,
+      "steps": 4,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 27,
+      "seed": 7170027,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "up",
+        "up",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 28,
+      "seed": 7170028,
+      "success": false,
+      "steps": 40,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "was_optimal": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "episode": 29,
+      "seed": 7170029,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "up",
+        "up",
+        "up"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 30,
+      "seed": 7170030,
+      "success": true,
+      "steps": 2,
+      "actions": [
+        "up",
+        "up"
+      ],
+      "was_optimal": [
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 31,
+      "seed": 7170031,
+      "success": true,
+      "steps": 4,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 32,
+      "seed": 7170032,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "up",
+        "up",
+        "left"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 33,
+      "seed": 7170033,
+      "success": false,
+      "steps": 40,
+      "actions": [
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up",
+        "up"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "episode": 34,
+      "seed": 7170034,
+      "success": true,
+      "steps": 6,
+      "actions": [
+        "down",
+        "down",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 35,
+      "seed": 7170035,
+      "success": true,
+      "steps": 5,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "right",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 36,
+      "seed": 7170036,
+      "success": true,
+      "steps": 6,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 37,
+      "seed": 7170037,
+      "success": true,
+      "steps": 2,
+      "actions": [
+        "down",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 38,
+      "seed": 7170038,
+      "success": true,
+      "steps": 5,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 39,
+      "seed": 7170039,
+      "success": true,
+      "steps": 2,
+      "actions": [
+        "up",
+        "up"
+      ],
+      "was_optimal": [
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 40,
+      "seed": 7170040,
+      "success": true,
+      "steps": 2,
+      "actions": [
+        "up",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 41,
+      "seed": 7170041,
+      "success": false,
+      "steps": 40,
+      "actions": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "was_optimal": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "episode": 42,
+      "seed": 7170042,
+      "success": true,
+      "steps": 1,
+      "actions": [
+        "left"
+      ],
+      "was_optimal": [
+        true
+      ]
+    },
+    {
+      "episode": 43,
+      "seed": 7170043,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "down",
+        "down",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 44,
+      "seed": 7170044,
+      "success": true,
+      "steps": 1,
+      "actions": [
+        "up"
+      ],
+      "was_optimal": [
+        true
+      ]
+    },
+    {
+      "episode": 45,
+      "seed": 7170045,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "left",
+        "left",
+        "down"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 46,
+      "seed": 7170046,
+      "success": true,
+      "steps": 2,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 47,
+      "seed": 7170047,
+      "success": true,
+      "steps": 5,
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 48,
+      "seed": 7170048,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "down",
+        "down",
+        "right"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "episode": 49,
+      "seed": 7170049,
+      "success": true,
+      "steps": 3,
+      "actions": [
+        "down",
+        "left",
+        "left"
+      ],
+      "was_optimal": [
+        true,
+        true,
+        true
+      ]
+    }
+  ]
+}

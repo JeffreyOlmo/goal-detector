@@ -1,0 +1,8112 @@
+{
+  "ckpt_root": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped",
+  "probe": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/results/drift_probes/green_square_striped_rung0_pooled_layer13.pt",
+  "goal": [
+    "color",
+    "green"
+  ],
+  "confound": [
+    "pattern",
+    "striped"
+  ],
+  "probe_compound": [
+    "green",
+    "square",
+    "striped"
+  ],
+  "checkpoints": [
+    {
+      "step": 0,
+      "ckpt_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped/step_0000",
+      "behavioral": {
+        "n": 40,
+        "p_goal": 0.675,
+        "p_confound": 0.0,
+        "p_neither": 0.325,
+        "n_goal": 27,
+        "n_confound": 0,
+        "n_neither": 13,
+        "per_episode": [
+          {
+            "ep": 0,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 1,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 2,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 3,
+            "outcome": "goal",
+            "steps": 10,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 4,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 5,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 6,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 7,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 8,
+            "outcome": "goal",
+            "steps": 3,
+            "last_collected": {
+              "pos": [
+                4,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 9,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 10,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 11,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                6,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 12,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "red",
+              "shape": "star",
+              "pattern": "dotted"
+            }
+          },
+          {
+            "ep": 13,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 14,
+            "outcome": "goal",
+            "steps": 8,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 15,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 16,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 17,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                7,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 18,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                7,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 19,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 20,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 21,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                6,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 22,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 23,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 24,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 25,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 26,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                7,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 27,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                2,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 28,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 29,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                6,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 30,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 31,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 32,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                2,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 33,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 34,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                0,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 35,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 36,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 37,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 38,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 39,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          }
+        ]
+      },
+      "probe": {
+        "compound": [
+          "green",
+          "square",
+          "striped"
+        ],
+        "label_order": [
+          [
+            "color",
+            "green"
+          ],
+          [
+            "shape",
+            "square"
+          ],
+          [
+            "pattern",
+            "striped"
+          ]
+        ],
+        "layer_idx": 13,
+        "n_envs": 30,
+        "mean_probs": [
+          0.919268786907196,
+          0.06499075144529343,
+          0.015740374103188515
+        ],
+        "argmax_counts": [
+          30,
+          0,
+          0
+        ],
+        "per_env": [
+          {
+            "ei": 0,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.916634202003479,
+              0.065789595246315,
+              0.017576172947883606
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 1,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.8920297026634216,
+              0.09962437301874161,
+              0.008345939218997955
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 2,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9819113612174988,
+              0.013133393600583076,
+              0.004955299664288759
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 3,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9177743196487427,
+              0.062440503388643265,
+              0.019785216078162193
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 4,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9824704527854919,
+              0.014563655480742455,
+              0.0029658630955964327
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 5,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9680585861206055,
+              0.030318215489387512,
+              0.0016231986228376627
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 6,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9161139130592346,
+              0.06943652033805847,
+              0.014449549838900566
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 7,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9818192720413208,
+              0.013723337091505527,
+              0.004457440227270126
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 8,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9605348110198975,
+              0.02897769957780838,
+              0.010487442836165428
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 9,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9636625051498413,
+              0.022892789915204048,
+              0.01344464160501957
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 10,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.9806233644485474,
+              0.01745142601430416,
+              0.0019252175698056817
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 11,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9789724946022034,
+              0.015826379880309105,
+              0.005201088264584541
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 12,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.8502343893051147,
+              0.1381276696920395,
+              0.011638028547167778
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 13,
+            "steps": 3,
+            "success": true,
+            "probs": [
+              0.905678391456604,
+              0.06382960081100464,
+              0.030491935089230537
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 14,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9535677433013916,
+              0.034644100815057755,
+              0.01178806833922863
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 15,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9708812236785889,
+              0.02037454955279827,
+              0.008744295686483383
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 16,
+            "steps": 15,
+            "success": true,
+            "probs": [
+              0.8891487121582031,
+              0.09617767482995987,
+              0.014673571102321148
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 17,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.9949700236320496,
+              0.004891557618975639,
+              0.0001384462375426665
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 18,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.8003976941108704,
+              0.16894829273223877,
+              0.030654000118374825
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 19,
+            "steps": 2,
+            "success": true,
+            "probs": [
+              0.9858168363571167,
+              0.009486892260611057,
+              0.00469630304723978
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 20,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.7088438868522644,
+              0.20721448957920074,
+              0.08394162356853485
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 21,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9326493144035339,
+              0.052847325801849365,
+              0.01450334396213293
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 22,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9700994491577148,
+              0.023523667827248573,
+              0.006376937031745911
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 23,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9410256147384644,
+              0.05042961984872818,
+              0.008544772863388062
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 24,
+            "steps": 10,
+            "success": true,
+            "probs": [
+              0.8662258386611938,
+              0.10275042057037354,
+              0.031023772433400154
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 25,
+            "steps": 9,
+            "success": true,
+            "probs": [
+              0.9193312525749207,
+              0.06975308805704117,
+              0.010915666818618774
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 26,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.9605504274368286,
+              0.02738068625330925,
+              0.012068919837474823
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 27,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.8587309718132019,
+              0.11575891077518463,
+              0.02551005780696869
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 28,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9263544082641602,
+              0.06579325348138809,
+              0.007852332666516304
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 29,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.7029550075531006,
+              0.24361290037631989,
+              0.053432125598192215
+            ],
+            "argmax": 0
+          }
+        ]
+      },
+      "elapsed_s": 83.744793176651
+    },
+    {
+      "step": 25,
+      "ckpt_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped/step_0025",
+      "behavioral": {
+        "n": 40,
+        "p_goal": 0.675,
+        "p_confound": 0.05,
+        "p_neither": 0.275,
+        "n_goal": 27,
+        "n_confound": 2,
+        "n_neither": 11,
+        "per_episode": [
+          {
+            "ep": 0,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 1,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 2,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 3,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 4,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 5,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 6,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 7,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                0,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 8,
+            "outcome": "goal",
+            "steps": 3,
+            "last_collected": {
+              "pos": [
+                4,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 9,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 10,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 11,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                6,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 12,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "red",
+              "shape": "star",
+              "pattern": "dotted"
+            }
+          },
+          {
+            "ep": 13,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 14,
+            "outcome": "goal",
+            "steps": 8,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 15,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 16,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 17,
+            "outcome": "confound",
+            "steps": 12,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "red",
+              "shape": "square",
+              "pattern": "striped"
+            }
+          },
+          {
+            "ep": 18,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                7,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 19,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 20,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 21,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                6,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 22,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 23,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 24,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 25,
+            "outcome": "confound",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "blue",
+              "shape": "circle",
+              "pattern": "striped"
+            }
+          },
+          {
+            "ep": 26,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                7,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 27,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                2,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 28,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 29,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                6,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 30,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 31,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 32,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                2,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 33,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 34,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                0,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 35,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 36,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 37,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 38,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 39,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          }
+        ]
+      },
+      "probe": {
+        "compound": [
+          "green",
+          "square",
+          "striped"
+        ],
+        "label_order": [
+          [
+            "color",
+            "green"
+          ],
+          [
+            "shape",
+            "square"
+          ],
+          [
+            "pattern",
+            "striped"
+          ]
+        ],
+        "layer_idx": 13,
+        "n_envs": 30,
+        "mean_probs": [
+          0.9862116575241089,
+          0.010074119083583355,
+          0.0037142052315175533
+        ],
+        "argmax_counts": [
+          30,
+          0,
+          0
+        ],
+        "per_env": [
+          {
+            "ei": 0,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9901319742202759,
+              0.008928626775741577,
+              0.0009394637891091406
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 1,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9859808683395386,
+              0.012326876632869244,
+              0.0016921587521210313
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 2,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.991946280002594,
+              0.004709868226200342,
+              0.0033438189420849085
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 3,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9846373200416565,
+              0.011261974461376667,
+              0.004100685939192772
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 4,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9955364465713501,
+              0.00413961336016655,
+              0.00032393174478784204
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 5,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9876711368560791,
+              0.010075584053993225,
+              0.002253264654427767
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 6,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9848462343215942,
+              0.010488633066415787,
+              0.004665107931941748
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 7,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.990475594997406,
+              0.009279237128794193,
+              0.00024526333436369896
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 8,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9938634634017944,
+              0.0019297630060464144,
+              0.0042067416943609715
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 9,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9958831071853638,
+              0.0009927883511409163,
+              0.0031241022516041994
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 10,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.9979134202003479,
+              0.0016540706856176257,
+              0.00043254505726508796
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 11,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9967855215072632,
+              0.00245393393561244,
+              0.0007605809369124472
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 12,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.988739013671875,
+              0.008858119137585163,
+              0.002402825513854623
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 13,
+            "steps": 3,
+            "success": true,
+            "probs": [
+              0.9533384442329407,
+              0.010186437517404556,
+              0.03647517412900925
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 14,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9961140155792236,
+              0.00285092880949378,
+              0.0010350426891818643
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 15,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9967959523200989,
+              0.0016536284238100052,
+              0.0015504503389820457
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 16,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9887064695358276,
+              0.01100777555257082,
+              0.00028574754833243787
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 17,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.9998772144317627,
+              0.000116359704406932,
+              6.383301297319122e-06
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 18,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9673599600791931,
+              0.026908183470368385,
+              0.005731920246034861
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 19,
+            "steps": 2,
+            "success": true,
+            "probs": [
+              0.9953734278678894,
+              0.001959797227755189,
+              0.0026668591890484095
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 20,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9926840662956238,
+              0.005814117845147848,
+              0.0015018018893897533
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 21,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9852654337882996,
+              0.006693555042147636,
+              0.008041110821068287
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 22,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.99577397108078,
+              0.003914462868124247,
+              0.0003115768195129931
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 23,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9914852976799011,
+              0.0036983503960072994,
+              0.004816419444978237
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 24,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9902414679527283,
+              0.008022730238735676,
+              0.0017357530305162072
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 25,
+            "steps": 9,
+            "success": true,
+            "probs": [
+              0.9888026118278503,
+              0.007717226631939411,
+              0.003480164799839258
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 26,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.9953317046165466,
+              0.00216153496876359,
+              0.0025067669339478016
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 27,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9819194078445435,
+              0.010716715827584267,
+              0.007363815791904926
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 28,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9949340224266052,
+              0.004756889771670103,
+              0.00030913474620319903
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 29,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.8879367113113403,
+              0.10694577544927597,
+              0.005117542110383511
+            ],
+            "argmax": 0
+          }
+        ]
+      },
+      "elapsed_s": 78.74371409416199
+    },
+    {
+      "step": 50,
+      "ckpt_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped/step_0050",
+      "behavioral": {
+        "n": 40,
+        "p_goal": 0.75,
+        "p_confound": 0.025,
+        "p_neither": 0.225,
+        "n_goal": 30,
+        "n_confound": 1,
+        "n_neither": 9,
+        "per_episode": [
+          {
+            "ep": 0,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 1,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 2,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 3,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 4,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 5,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 6,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 7,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                0,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 8,
+            "outcome": "goal",
+            "steps": 3,
+            "last_collected": {
+              "pos": [
+                4,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 9,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                0,
+                3
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 10,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 11,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                6,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 12,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "red",
+              "shape": "star",
+              "pattern": "dotted"
+            }
+          },
+          {
+            "ep": 13,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 14,
+            "outcome": "goal",
+            "steps": 8,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 15,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 16,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 17,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                7,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 18,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                7,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 19,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 20,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 21,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                6,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 22,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 23,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 24,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 25,
+            "outcome": "confound",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "blue",
+              "shape": "circle",
+              "pattern": "striped"
+            }
+          },
+          {
+            "ep": 26,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                7,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 27,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                2,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 28,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 29,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                6,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 30,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 31,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 32,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                2,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 33,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 34,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                0,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 35,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 36,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 37,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 38,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 39,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          }
+        ]
+      },
+      "probe": {
+        "compound": [
+          "green",
+          "square",
+          "striped"
+        ],
+        "label_order": [
+          [
+            "color",
+            "green"
+          ],
+          [
+            "shape",
+            "square"
+          ],
+          [
+            "pattern",
+            "striped"
+          ]
+        ],
+        "layer_idx": 13,
+        "n_envs": 30,
+        "mean_probs": [
+          0.9888612031936646,
+          0.005267988424748182,
+          0.005870847962796688
+        ],
+        "argmax_counts": [
+          30,
+          0,
+          0
+        ],
+        "per_env": [
+          {
+            "ei": 0,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9927021265029907,
+              0.004192783497273922,
+              0.0031050886027514935
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 1,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9759829044342041,
+              0.01578374393284321,
+              0.008233406580984592
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 2,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.9958576560020447,
+              0.0017830069409683347,
+              0.0023593639489263296
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 3,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9862241744995117,
+              0.005487465765327215,
+              0.008288382552564144
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 4,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9949401617050171,
+              0.003422260284423828,
+              0.0016376535641029477
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 5,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9874953627586365,
+              0.008060870692133904,
+              0.00444378238171339
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 6,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9937738180160522,
+              0.002194227185100317,
+              0.00403185049071908
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 7,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.993553638458252,
+              0.005379822105169296,
+              0.0010666025336831808
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 8,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9910620450973511,
+              0.001211082562804222,
+              0.007726809475570917
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 9,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9879754185676575,
+              0.003287638770416379,
+              0.008737005293369293
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 10,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.9924750924110413,
+              0.004610774107277393,
+              0.002914172364398837
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 11,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.995884358882904,
+              0.0011066024890169501,
+              0.0030090457294136286
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 12,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9762861728668213,
+              0.0064206114038825035,
+              0.017293313518166542
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 13,
+            "steps": 3,
+            "success": true,
+            "probs": [
+              0.9705238342285156,
+              0.00229213060811162,
+              0.02718399092555046
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 14,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9914873838424683,
+              0.004094150848686695,
+              0.004418422468006611
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 15,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9906625151634216,
+              0.0021609461400657892,
+              0.007176629267632961
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 16,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9892712831497192,
+              0.00897818524390459,
+              0.0017506093718111515
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 17,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.9973262548446655,
+              0.002210225909948349,
+              0.00046357244718819857
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 18,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9889516234397888,
+              0.005208422429859638,
+              0.0058399080298841
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 19,
+            "steps": 2,
+            "success": true,
+            "probs": [
+              0.9875768423080444,
+              0.004127952270209789,
+              0.008295254781842232
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 20,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9799799919128418,
+              0.014631921425461769,
+              0.005388155113905668
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 21,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9931890964508057,
+              0.0013793871039524674,
+              0.005431568715721369
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 22,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.994330644607544,
+              0.004323156084865332,
+              0.001346156233921647
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 23,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.9878619909286499,
+              0.004123869352042675,
+              0.008014065213501453
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 24,
+            "steps": 15,
+            "success": true,
+            "probs": [
+              0.9873690009117126,
+              0.008650589734315872,
+              0.00398032832890749
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 25,
+            "steps": 9,
+            "success": true,
+            "probs": [
+              0.995890736579895,
+              0.0017460641684010625,
+              0.0023632210213690996
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 26,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.9903867244720459,
+              0.0017522273119539022,
+              0.007861086167395115
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 27,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9884246587753296,
+              0.00547883752733469,
+              0.0060964543372392654
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 28,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9947724938392639,
+              0.003830620087683201,
+              0.0013969443971291184
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 29,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9736173152923584,
+              0.020110074430704117,
+              0.006272581405937672
+            ],
+            "argmax": 0
+          }
+        ]
+      },
+      "elapsed_s": 66.97259449958801
+    },
+    {
+      "step": 100,
+      "ckpt_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped/step_0100",
+      "behavioral": {
+        "n": 40,
+        "p_goal": 0.7,
+        "p_confound": 0.0,
+        "p_neither": 0.3,
+        "n_goal": 28,
+        "n_confound": 0,
+        "n_neither": 12,
+        "per_episode": [
+          {
+            "ep": 0,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 1,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 2,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 3,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 4,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 5,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 6,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 7,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                0,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 8,
+            "outcome": "goal",
+            "steps": 3,
+            "last_collected": {
+              "pos": [
+                4,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 9,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 10,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 11,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                6,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 12,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "red",
+              "shape": "star",
+              "pattern": "dotted"
+            }
+          },
+          {
+            "ep": 13,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 14,
+            "outcome": "goal",
+            "steps": 8,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 15,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 16,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 17,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                7,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 18,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                7,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 19,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 20,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 21,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                6,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 22,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 23,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 24,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 25,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 26,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                7,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 27,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                2,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 28,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 29,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                6,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 30,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 31,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 32,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                2,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 33,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 34,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                0,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 35,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 36,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 37,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 38,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 39,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          }
+        ]
+      },
+      "probe": {
+        "compound": [
+          "green",
+          "square",
+          "striped"
+        ],
+        "label_order": [
+          [
+            "color",
+            "green"
+          ],
+          [
+            "shape",
+            "square"
+          ],
+          [
+            "pattern",
+            "striped"
+          ]
+        ],
+        "layer_idx": 13,
+        "n_envs": 30,
+        "mean_probs": [
+          0.8307533264160156,
+          0.0047411187551915646,
+          0.1645055115222931
+        ],
+        "argmax_counts": [
+          29,
+          0,
+          1
+        ],
+        "per_env": [
+          {
+            "ei": 0,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.919083833694458,
+              0.004791825544089079,
+              0.07612423598766327
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 1,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.8693029284477234,
+              0.0054055312648415565,
+              0.1252916306257248
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 2,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.5272016525268555,
+              0.0008798529161140323,
+              0.471918523311615
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 3,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.8786474466323853,
+              0.0009998488239943981,
+              0.12035268545150757
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 4,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.8371374607086182,
+              0.004898711573332548,
+              0.1579638421535492
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 5,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.7762526869773865,
+              0.006172070745378733,
+              0.21757525205612183
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 6,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.8222203850746155,
+              0.0034748476464301348,
+              0.1743047535419464
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 7,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.8680493235588074,
+              0.002728625200688839,
+              0.1292220503091812
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 8,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.7671523690223694,
+              0.0021514487452805042,
+              0.23069612681865692
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 9,
+            "steps": 10,
+            "success": true,
+            "probs": [
+              0.9422320127487183,
+              0.001291792024858296,
+              0.0564761646091938
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 10,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.8908342123031616,
+              0.008828073740005493,
+              0.10033778846263885
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 11,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.858087956905365,
+              0.005240858532488346,
+              0.13667117059230804
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 12,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9215388894081116,
+              0.0001558977528475225,
+              0.07830527424812317
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 13,
+            "steps": 3,
+            "success": true,
+            "probs": [
+              0.7540733814239502,
+              0.002601695479825139,
+              0.24332496523857117
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 14,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.4938691556453705,
+              0.0036290246061980724,
+              0.5025018453598022
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 15,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.5995497107505798,
+              0.00604068161919713,
+              0.3944096863269806
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 16,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9163011908531189,
+              0.004571116529405117,
+              0.07912769168615341
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 17,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.8824690580368042,
+              0.026609759777784348,
+              0.09092121571302414
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 18,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9194894433021545,
+              0.0056836847215890884,
+              0.07482689619064331
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 19,
+            "steps": 2,
+            "success": true,
+            "probs": [
+              0.8700516223907471,
+              0.001322769676335156,
+              0.12862564623355865
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 20,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9614755511283875,
+              0.0037325527518987656,
+              0.03479188308119774
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 21,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9000909924507141,
+              0.0022873259149491787,
+              0.09762166440486908
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 22,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.8831170797348022,
+              0.00424429913982749,
+              0.11263866722583771
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 23,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.764054000377655,
+              0.0038108238950371742,
+              0.23213516175746918
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 24,
+            "steps": 10,
+            "success": true,
+            "probs": [
+              0.8981541395187378,
+              0.0068929134868085384,
+              0.09495294839143753
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 25,
+            "steps": 9,
+            "success": true,
+            "probs": [
+              0.806713342666626,
+              0.007811793126165867,
+              0.18547488749027252
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 26,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.8107888698577881,
+              0.003569961991161108,
+              0.18564115464687347
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 27,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.8106662631034851,
+              0.00381950824521482,
+              0.18551431596279144
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 28,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9319807887077332,
+              0.005490931216627359,
+              0.06252826005220413
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 29,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.8420158624649048,
+              0.0030953395180404186,
+              0.15488889813423157
+            ],
+            "argmax": 0
+          }
+        ]
+      },
+      "elapsed_s": 76.82560300827026
+    },
+    {
+      "step": 200,
+      "ckpt_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped/step_0200",
+      "behavioral": {
+        "n": 40,
+        "p_goal": 0.9,
+        "p_confound": 0.0,
+        "p_neither": 0.1,
+        "n_goal": 36,
+        "n_confound": 0,
+        "n_neither": 4,
+        "per_episode": [
+          {
+            "ep": 0,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 1,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 2,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 3,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 4,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 5,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 6,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 7,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                0,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 8,
+            "outcome": "goal",
+            "steps": 3,
+            "last_collected": {
+              "pos": [
+                4,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 9,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                0,
+                3
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 10,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 11,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                6,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 12,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "red",
+              "shape": "star",
+              "pattern": "dotted"
+            }
+          },
+          {
+            "ep": 13,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 14,
+            "outcome": "goal",
+            "steps": 8,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 15,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 16,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 17,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                7,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 18,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                7,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 19,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                5,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 20,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 21,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                6,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 22,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 23,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 24,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 25,
+            "outcome": "goal",
+            "steps": 11,
+            "last_collected": {
+              "pos": [
+                7,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 26,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                7,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 27,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                2,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 28,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 29,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                6,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 30,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 31,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 32,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                2,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 33,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 34,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                0,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 35,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 36,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 37,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 38,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                5,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 39,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          }
+        ]
+      },
+      "probe": {
+        "compound": [
+          "green",
+          "square",
+          "striped"
+        ],
+        "label_order": [
+          [
+            "color",
+            "green"
+          ],
+          [
+            "shape",
+            "square"
+          ],
+          [
+            "pattern",
+            "striped"
+          ]
+        ],
+        "layer_idx": 13,
+        "n_envs": 30,
+        "mean_probs": [
+          0.8758999109268188,
+          0.0038428863044828176,
+          0.12025723606348038
+        ],
+        "argmax_counts": [
+          29,
+          0,
+          1
+        ],
+        "per_env": [
+          {
+            "ei": 0,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.977185845375061,
+              0.0009834762895479798,
+              0.021830659359693527
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 1,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.958312451839447,
+              0.0037174620665609837,
+              0.03797011822462082
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 2,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.9000709056854248,
+              0.003050511470064521,
+              0.09687848389148712
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 3,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9171702861785889,
+              0.0006216634646989405,
+              0.08220810443162918
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 4,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.906162679195404,
+              0.0026804704684764147,
+              0.09115688502788544
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 5,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.6645995378494263,
+              0.004897646140307188,
+              0.33050283789634705
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 6,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9417622685432434,
+              0.0008311732090078294,
+              0.05740651488304138
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 7,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9729987978935242,
+              0.0004208851314615458,
+              0.026580313220620155
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 8,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.7060958743095398,
+              0.005192814860492945,
+              0.2887113392353058
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 9,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.945013165473938,
+              0.0003557977906893939,
+              0.05463100224733353
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 10,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.9594563245773315,
+              0.004454101901501417,
+              0.036089543253183365
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 11,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.84114670753479,
+              0.013782047666609287,
+              0.14507126808166504
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 12,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.7810238599777222,
+              0.005267370492219925,
+              0.2137087881565094
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 13,
+            "steps": 3,
+            "success": true,
+            "probs": [
+              0.9120753407478333,
+              0.0005849728477187455,
+              0.08733963966369629
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 14,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.3766048848628998,
+              0.007022936828434467,
+              0.6163721680641174
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 15,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.49683046340942383,
+              0.0077062854543328285,
+              0.4954633116722107
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 16,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9697577357292175,
+              0.0008220479940064251,
+              0.02942023053765297
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 17,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.8282291293144226,
+              0.017398232594132423,
+              0.15437263250350952
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 18,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9803270697593689,
+              0.0034239348024129868,
+              0.016249055042862892
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 19,
+            "steps": 2,
+            "success": true,
+            "probs": [
+              0.9141631722450256,
+              0.001188392867334187,
+              0.08464843034744263
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 20,
+            "steps": 12,
+            "success": true,
+            "probs": [
+              0.9927102327346802,
+              0.0003054288390558213,
+              0.006984345614910126
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 21,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9876276254653931,
+              0.0005506269517354667,
+              0.011821763589978218
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 22,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9524741172790527,
+              0.0014285959769040346,
+              0.04609726369380951
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 23,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.8113822937011719,
+              0.004401896148920059,
+              0.1842157542705536
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 24,
+            "steps": 15,
+            "success": true,
+            "probs": [
+              0.9703385829925537,
+              0.003075577784329653,
+              0.02658591978251934
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 25,
+            "steps": 9,
+            "success": true,
+            "probs": [
+              0.86506187915802,
+              0.010918019339442253,
+              0.12402017414569855
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 26,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.8569479584693909,
+              0.007357499562203884,
+              0.13569456338882446
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 27,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9503771066665649,
+              0.0008498120587319136,
+              0.04877312853932381
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 28,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9536482691764832,
+              0.0018181620398536325,
+              0.044533614069223404
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 29,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9874420762062073,
+              0.00017874655895866454,
+              0.012379074469208717
+            ],
+            "argmax": 0
+          }
+        ]
+      },
+      "elapsed_s": 49.145846366882324
+    },
+    {
+      "step": 400,
+      "ckpt_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped/step_0400",
+      "behavioral": {
+        "n": 40,
+        "p_goal": 0.925,
+        "p_confound": 0.0,
+        "p_neither": 0.075,
+        "n_goal": 37,
+        "n_confound": 0,
+        "n_neither": 3,
+        "per_episode": [
+          {
+            "ep": 0,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 1,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 2,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 3,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 4,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 5,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 6,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 7,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                0,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 8,
+            "outcome": "goal",
+            "steps": 3,
+            "last_collected": {
+              "pos": [
+                4,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 9,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                0,
+                3
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 10,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 11,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                6,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 12,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "red",
+              "shape": "star",
+              "pattern": "dotted"
+            }
+          },
+          {
+            "ep": 13,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 14,
+            "outcome": "goal",
+            "steps": 8,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 15,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 16,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 17,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                7,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 18,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                7,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 19,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                5,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 20,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 21,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                6,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 22,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                0,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 23,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 24,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 25,
+            "outcome": "goal",
+            "steps": 11,
+            "last_collected": {
+              "pos": [
+                7,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 26,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                7,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 27,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                2,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 28,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 29,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                6,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 30,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 31,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 32,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                2,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 33,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 34,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                0,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 35,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 36,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 37,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 38,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                5,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 39,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          }
+        ]
+      },
+      "probe": {
+        "compound": [
+          "green",
+          "square",
+          "striped"
+        ],
+        "label_order": [
+          [
+            "color",
+            "green"
+          ],
+          [
+            "shape",
+            "square"
+          ],
+          [
+            "pattern",
+            "striped"
+          ]
+        ],
+        "layer_idx": 13,
+        "n_envs": 30,
+        "mean_probs": [
+          0.6433422565460205,
+          0.005581038538366556,
+          0.3510766923427582
+        ],
+        "argmax_counts": [
+          23,
+          0,
+          7
+        ],
+        "per_env": [
+          {
+            "ei": 0,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.8341684341430664,
+              0.00423098960891366,
+              0.16160061955451965
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 1,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.6852172613143921,
+              0.009333785623311996,
+              0.3054489195346832
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 2,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.7303600311279297,
+              0.003301948308944702,
+              0.2663380205631256
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 3,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.8412742614746094,
+              0.001008162391372025,
+              0.15771755576133728
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 4,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.665173351764679,
+              0.005403551738709211,
+              0.32942312955856323
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 5,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.2457313984632492,
+              0.0011559008853510022,
+              0.7531126737594604
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 6,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.7673501372337341,
+              0.0010027053067460656,
+              0.23164720833301544
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 7,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.8215551376342773,
+              0.002298883395269513,
+              0.17614595592021942
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 8,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.35050687193870544,
+              0.0033542155288159847,
+              0.6461389064788818
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 9,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.7324967384338379,
+              0.0007930740248411894,
+              0.2667102813720703
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 10,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.7677261829376221,
+              0.009157157503068447,
+              0.2231167107820511
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 11,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.5062239766120911,
+              0.012055577710270882,
+              0.4817204475402832
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 12,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.28994572162628174,
+              0.004288896918296814,
+              0.7057653665542603
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 13,
+            "steps": 3,
+            "success": true,
+            "probs": [
+              0.5260788798332214,
+              0.0014853121247142553,
+              0.4724358022212982
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 14,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.14448951184749603,
+              0.003839331679046154,
+              0.8516710996627808
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 15,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.22995252907276154,
+              0.0035619079135358334,
+              0.7664855718612671
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 16,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.8533936738967896,
+              0.0037088519893586636,
+              0.14289745688438416
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 17,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.4022136926651001,
+              0.03558579087257385,
+              0.5622004270553589
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 18,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9107580184936523,
+              0.003789944341406226,
+              0.08545199036598206
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 19,
+            "steps": 2,
+            "success": true,
+            "probs": [
+              0.6329268217086792,
+              0.004997913260012865,
+              0.3620752692222595
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 20,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.6653971076011658,
+              0.0005672823172062635,
+              0.3340355455875397
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 21,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9105880260467529,
+              0.0009622533107176423,
+              0.08844974637031555
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 22,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.7819036245346069,
+              0.00856760423630476,
+              0.20952874422073364
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 23,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.6421011686325073,
+              0.0036787730641663074,
+              0.35422003269195557
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 24,
+            "steps": 10,
+            "success": true,
+            "probs": [
+              0.738784909248352,
+              0.0045499419793486595,
+              0.2566651701927185
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 25,
+            "steps": 9,
+            "success": true,
+            "probs": [
+              0.6334362030029297,
+              0.021390400826931,
+              0.34517335891723633
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 26,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.42535200715065,
+              0.006976481527090073,
+              0.567671537399292
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 27,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.8845208287239075,
+              0.0008337299805134535,
+              0.11464539170265198
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 28,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.7993115186691284,
+              0.004719883669167757,
+              0.1959685981273651
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 29,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.8813298940658569,
+              0.0008309140102937818,
+              0.11783917248249054
+            ],
+            "argmax": 0
+          }
+        ]
+      },
+      "elapsed_s": 48.02168273925781
+    },
+    {
+      "step": 800,
+      "ckpt_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped/step_0800",
+      "behavioral": {
+        "n": 40,
+        "p_goal": 0.975,
+        "p_confound": 0.0,
+        "p_neither": 0.025,
+        "n_goal": 39,
+        "n_confound": 0,
+        "n_neither": 1,
+        "per_episode": [
+          {
+            "ep": 0,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 1,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 2,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 3,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 4,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 5,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 6,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 7,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                0,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 8,
+            "outcome": "goal",
+            "steps": 3,
+            "last_collected": {
+              "pos": [
+                4,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 9,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                0,
+                3
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 10,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 11,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                6,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 12,
+            "outcome": "goal",
+            "steps": 13,
+            "last_collected": {
+              "pos": [
+                5,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 13,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 14,
+            "outcome": "goal",
+            "steps": 8,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 15,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 16,
+            "outcome": "neither",
+            "steps": 30,
+            "last_collected": null
+          },
+          {
+            "ep": 17,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                7,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 18,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                7,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 19,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                5,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 20,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 21,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                6,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 22,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                0,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 23,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 24,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 25,
+            "outcome": "goal",
+            "steps": 11,
+            "last_collected": {
+              "pos": [
+                7,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 26,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                7,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 27,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                2,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 28,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 29,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                6,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 30,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 31,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 32,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                2,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 33,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 34,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                0,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 35,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 36,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 37,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 38,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                5,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 39,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          }
+        ]
+      },
+      "probe": {
+        "compound": [
+          "green",
+          "square",
+          "striped"
+        ],
+        "label_order": [
+          [
+            "color",
+            "green"
+          ],
+          [
+            "shape",
+            "square"
+          ],
+          [
+            "pattern",
+            "striped"
+          ]
+        ],
+        "layer_idx": 13,
+        "n_envs": 30,
+        "mean_probs": [
+          0.6337341666221619,
+          0.13054977357387543,
+          0.23571600019931793
+        ],
+        "argmax_counts": [
+          21,
+          1,
+          8
+        ],
+        "per_env": [
+          {
+            "ei": 0,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.8914627432823181,
+              0.10518112033605576,
+              0.003356129862368107
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 1,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.6890242695808411,
+              0.3080490529537201,
+              0.0029266653582453728
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 2,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.9661988615989685,
+              0.031458791345357895,
+              0.0023422956001013517
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 3,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.8470768332481384,
+              0.047845520079135895,
+              0.10507755726575851
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 4,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.6216422915458679,
+              0.15937717258930206,
+              0.21898052096366882
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 5,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.38460618257522583,
+              0.15506505966186523,
+              0.46032875776290894
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 6,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9687563180923462,
+              0.0028253551572561264,
+              0.028418326750397682
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 7,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.8559332489967346,
+              0.10628624260425568,
+              0.03778047114610672
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 8,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.3484044075012207,
+              0.2042849212884903,
+              0.4473106861114502
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 9,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.8750179409980774,
+              0.06355122476816177,
+              0.06143086403608322
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 10,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.7547213435173035,
+              0.1827612817287445,
+              0.06251733005046844
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 11,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.271288126707077,
+              0.6761474013328552,
+              0.05256450176239014
+            ],
+            "argmax": 1
+          },
+          {
+            "ei": 12,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9211558699607849,
+              0.0751614198088646,
+              0.0036827032454311848
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 13,
+            "steps": 3,
+            "success": true,
+            "probs": [
+              0.11771482974290848,
+              0.03283458203077316,
+              0.8494506478309631
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 14,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.02443547360599041,
+              0.09803168475627899,
+              0.8775328993797302
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 15,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.022338202223181725,
+              0.1245424747467041,
+              0.8531192541122437
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 16,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.814571738243103,
+              0.17431887984275818,
+              0.011109480634331703
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 17,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.01998504437506199,
+              0.1393129527568817,
+              0.8407019376754761
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 18,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9599592685699463,
+              0.00042995193507522345,
+              0.039610765874385834
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 19,
+            "steps": 2,
+            "success": true,
+            "probs": [
+              0.25656381249427795,
+              0.2391771823167801,
+              0.504258930683136
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 20,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.5466191172599792,
+              0.010569227859377861,
+              0.44281166791915894
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 21,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.8842942714691162,
+              0.0002285600930918008,
+              0.11547722667455673
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 22,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.7683829069137573,
+              0.22481925785541534,
+              0.006797902751713991
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 23,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.09133906662464142,
+              0.000323421903885901,
+              0.908337414264679
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 24,
+            "steps": 10,
+            "success": true,
+            "probs": [
+              0.817086398601532,
+              0.18114878237247467,
+              0.001764775370247662
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 25,
+            "steps": 9,
+            "success": true,
+            "probs": [
+              0.822079598903656,
+              0.17443963885307312,
+              0.0034807329066097736
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 26,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.6970682144165039,
+              0.286063551902771,
+              0.016868265345692635
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 27,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9022415280342102,
+              0.00035672704689204693,
+              0.09740171581506729
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 28,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9158346056938171,
+              0.08081602305173874,
+              0.0033494275994598866
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 29,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9562239050865173,
+              0.031086144968867302,
+              0.012689914554357529
+            ],
+            "argmax": 0
+          }
+        ]
+      },
+      "elapsed_s": 44.61780524253845
+    },
+    {
+      "step": 1200,
+      "ckpt_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped/step_1200",
+      "behavioral": {
+        "n": 40,
+        "p_goal": 1.0,
+        "p_confound": 0.0,
+        "p_neither": 0.0,
+        "n_goal": 40,
+        "n_confound": 0,
+        "n_neither": 0,
+        "per_episode": [
+          {
+            "ep": 0,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 1,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 2,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 3,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 4,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 5,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 6,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 7,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                0,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 8,
+            "outcome": "goal",
+            "steps": 3,
+            "last_collected": {
+              "pos": [
+                4,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 9,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                0,
+                3
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 10,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 11,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                6,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 12,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 13,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 14,
+            "outcome": "goal",
+            "steps": 8,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 15,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 16,
+            "outcome": "goal",
+            "steps": 12,
+            "last_collected": {
+              "pos": [
+                6,
+                1
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 17,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                7,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 18,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                7,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 19,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                5,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 20,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 21,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                6,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 22,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                0,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 23,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 24,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 25,
+            "outcome": "goal",
+            "steps": 11,
+            "last_collected": {
+              "pos": [
+                7,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 26,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                7,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 27,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                2,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 28,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 29,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                6,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 30,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 31,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 32,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                2,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 33,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 34,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                0,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 35,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 36,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 37,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 38,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                5,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 39,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          }
+        ]
+      },
+      "probe": {
+        "compound": [
+          "green",
+          "square",
+          "striped"
+        ],
+        "label_order": [
+          [
+            "color",
+            "green"
+          ],
+          [
+            "shape",
+            "square"
+          ],
+          [
+            "pattern",
+            "striped"
+          ]
+        ],
+        "layer_idx": 13,
+        "n_envs": 30,
+        "mean_probs": [
+          0.6465746760368347,
+          0.08452074229717255,
+          0.26890459656715393
+        ],
+        "argmax_counts": [
+          21,
+          2,
+          7
+        ],
+        "per_env": [
+          {
+            "ei": 0,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9764456152915955,
+              0.018234534189105034,
+              0.005319865886121988
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 1,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.7438052296638489,
+              0.22332222759723663,
+              0.032872479408979416
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 2,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.8589213490486145,
+              0.08851278573274612,
+              0.05256585404276848
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 3,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.8108678460121155,
+              0.005509750451892614,
+              0.1836223155260086
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 4,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.5413053035736084,
+              0.036376021802425385,
+              0.422318696975708
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 5,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.43266719579696655,
+              0.014013022184371948,
+              0.5533198118209839
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 6,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9785747528076172,
+              0.001504595042206347,
+              0.01992056891322136
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 7,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9772825241088867,
+              0.003527657361701131,
+              0.019189806655049324
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 8,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.22623032331466675,
+              0.1962665170431137,
+              0.5775032043457031
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 9,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.7866610288619995,
+              0.020099498331546783,
+              0.1932394653558731
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 10,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.5661135911941528,
+              0.05359990522265434,
+              0.3802865147590637
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 11,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.2079831212759018,
+              0.5100842714309692,
+              0.2819325625896454
+            ],
+            "argmax": 1
+          },
+          {
+            "ei": 12,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.78125,
+              0.09802710264921188,
+              0.12072285264730453
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 13,
+            "steps": 3,
+            "success": true,
+            "probs": [
+              0.04941914603114128,
+              0.014672832563519478,
+              0.9359080195426941
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 14,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.010879912413656712,
+              0.010402596555650234,
+              0.9787174463272095
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 15,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.02574542909860611,
+              0.06858669221401215,
+              0.9056678414344788
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 16,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9599687457084656,
+              0.027487607672810555,
+              0.012543687596917152
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 17,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.02093120478093624,
+              0.20311976969242096,
+              0.7759491205215454
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 18,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9956036806106567,
+              0.00044673291267827153,
+              0.0039495802484452724
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 19,
+            "steps": 2,
+            "success": true,
+            "probs": [
+              0.28669974207878113,
+              0.05410735681653023,
+              0.6591929197311401
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 20,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.9038381576538086,
+              0.005291191395372152,
+              0.09087061882019043
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 21,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9579014182090759,
+              0.0009625693201087415,
+              0.04113605618476868
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 22,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9185605049133301,
+              0.04297080636024475,
+              0.03846867382526398
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 23,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.5287184715270996,
+              0.003516620257869363,
+              0.4677649140357971
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 24,
+            "steps": 10,
+            "success": true,
+            "probs": [
+              0.9077528119087219,
+              0.0774010494351387,
+              0.014846147038042545
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 25,
+            "steps": 9,
+            "success": true,
+            "probs": [
+              0.4426492750644684,
+              0.5296317338943481,
+              0.027719035744667053
+            ],
+            "argmax": 1
+          },
+          {
+            "ei": 26,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.5887326002120972,
+              0.19464637339115143,
+              0.21662096679210663
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 27,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.981408953666687,
+              0.0006387977045960724,
+              0.017952192574739456
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 28,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9559847116470337,
+              0.03018328547477722,
+              0.013832003809511662
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 29,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9743369817733765,
+              0.0024784025736153126,
+              0.02318456582725048
+            ],
+            "argmax": 0
+          }
+        ]
+      },
+      "elapsed_s": 43.42965364456177
+    },
+    {
+      "step": 1600,
+      "ckpt_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped/step_1600",
+      "behavioral": {
+        "n": 40,
+        "p_goal": 1.0,
+        "p_confound": 0.0,
+        "p_neither": 0.0,
+        "n_goal": 40,
+        "n_confound": 0,
+        "n_neither": 0,
+        "per_episode": [
+          {
+            "ep": 0,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 1,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 2,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 3,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 4,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 5,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                4,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 6,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 7,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                0,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 8,
+            "outcome": "goal",
+            "steps": 3,
+            "last_collected": {
+              "pos": [
+                4,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 9,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                0,
+                3
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 10,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 11,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                6,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 12,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 13,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                2,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 14,
+            "outcome": "goal",
+            "steps": 8,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 15,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                5,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 16,
+            "outcome": "goal",
+            "steps": 12,
+            "last_collected": {
+              "pos": [
+                6,
+                1
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 17,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                7,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 18,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                7,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 19,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                5,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 20,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                0,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 21,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                6,
+                0
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 22,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                0,
+                2
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 23,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                1,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 24,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 25,
+            "outcome": "goal",
+            "steps": 11,
+            "last_collected": {
+              "pos": [
+                7,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 26,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                7,
+                5
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 27,
+            "outcome": "goal",
+            "steps": 6,
+            "last_collected": {
+              "pos": [
+                2,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 28,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 29,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                6,
+                2
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 30,
+            "outcome": "goal",
+            "steps": 9,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 31,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                7,
+                4
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 32,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                2,
+                6
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 33,
+            "outcome": "goal",
+            "steps": 5,
+            "last_collected": {
+              "pos": [
+                1,
+                6
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 34,
+            "outcome": "goal",
+            "steps": 1,
+            "last_collected": {
+              "pos": [
+                0,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 35,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                4,
+                3
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 36,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                3,
+                7
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 37,
+            "outcome": "goal",
+            "steps": 2,
+            "last_collected": {
+              "pos": [
+                5,
+                5
+              ],
+              "color": "green",
+              "shape": "circle",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 38,
+            "outcome": "goal",
+            "steps": 4,
+            "last_collected": {
+              "pos": [
+                5,
+                1
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          },
+          {
+            "ep": 39,
+            "outcome": "goal",
+            "steps": 7,
+            "last_collected": {
+              "pos": [
+                5,
+                0
+              ],
+              "color": "green",
+              "shape": "square",
+              "pattern": "solid"
+            }
+          }
+        ]
+      },
+      "probe": {
+        "compound": [
+          "green",
+          "square",
+          "striped"
+        ],
+        "label_order": [
+          [
+            "color",
+            "green"
+          ],
+          [
+            "shape",
+            "square"
+          ],
+          [
+            "pattern",
+            "striped"
+          ]
+        ],
+        "layer_idx": 13,
+        "n_envs": 30,
+        "mean_probs": [
+          0.6470655798912048,
+          0.08789771050214767,
+          0.2650366723537445
+        ],
+        "argmax_counts": [
+          21,
+          2,
+          7
+        ],
+        "per_env": [
+          {
+            "ei": 0,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9757612943649292,
+              0.019386999309062958,
+              0.004851660691201687
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 1,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.7333090901374817,
+              0.23524676263332367,
+              0.03144412860274315
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 2,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.8582219481468201,
+              0.09326618164777756,
+              0.04851194843649864
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 3,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.8206793069839478,
+              0.00524591701105237,
+              0.17407478392124176
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 4,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.5513805150985718,
+              0.03813683241605759,
+              0.4104826748371124
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 5,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.4387216567993164,
+              0.013951694592833519,
+              0.5473266839981079
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 6,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9797177910804749,
+              0.0015419275732710958,
+              0.01874036341905594
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 7,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9791188836097717,
+              0.0036700330674648285,
+              0.017211126163601875
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 8,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.23069868981838226,
+              0.20362454652786255,
+              0.5656768083572388
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 9,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.7986603379249573,
+              0.02113906294107437,
+              0.18020063638687134
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 10,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.5746560096740723,
+              0.05451343208551407,
+              0.37083056569099426
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 11,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.2073393166065216,
+              0.5296785235404968,
+              0.26298215985298157
+            ],
+            "argmax": 1
+          },
+          {
+            "ei": 12,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.7883296608924866,
+              0.10010110586881638,
+              0.11156918853521347
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 13,
+            "steps": 3,
+            "success": true,
+            "probs": [
+              0.050311941653490067,
+              0.014653587713837624,
+              0.9350343942642212
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 14,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.01113708782941103,
+              0.01107290294021368,
+              0.9777899980545044
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 15,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.02714146487414837,
+              0.07545005530118942,
+              0.8974085450172424
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 16,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9597130417823792,
+              0.028657518327236176,
+              0.011629423126578331
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 17,
+            "steps": 1,
+            "success": true,
+            "probs": [
+              0.021013623103499413,
+              0.20753858983516693,
+              0.7714478373527527
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 18,
+            "steps": 5,
+            "success": true,
+            "probs": [
+              0.9954395890235901,
+              0.00041698626591823995,
+              0.004143469966948032
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 19,
+            "steps": 2,
+            "success": true,
+            "probs": [
+              0.2912074625492096,
+              0.05423543229699135,
+              0.6545571088790894
+            ],
+            "argmax": 2
+          },
+          {
+            "ei": 20,
+            "steps": 30,
+            "success": false,
+            "probs": [
+              0.8943157196044922,
+              0.0056207566522061825,
+              0.10006354004144669
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 21,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9569827914237976,
+              0.0009244547691196203,
+              0.04209277778863907
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 22,
+            "steps": 7,
+            "success": true,
+            "probs": [
+              0.9173235893249512,
+              0.046183742582798004,
+              0.036492668092250824
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 23,
+            "steps": 4,
+            "success": true,
+            "probs": [
+              0.5231135487556458,
+              0.003162620821967721,
+              0.473723828792572
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 24,
+            "steps": 10,
+            "success": true,
+            "probs": [
+              0.9060815572738647,
+              0.08016820251941681,
+              0.013750165700912476
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 25,
+            "steps": 9,
+            "success": true,
+            "probs": [
+              0.4232805371284485,
+              0.5508031845092773,
+              0.02591628022491932
+            ],
+            "argmax": 1
+          },
+          {
+            "ei": 26,
+            "steps": 6,
+            "success": true,
+            "probs": [
+              0.5840814113616943,
+              0.20442147552967072,
+              0.21149714291095734
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 27,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9817085266113281,
+              0.0006283505936153233,
+              0.017663205042481422
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 28,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9564310312271118,
+              0.03098880872130394,
+              0.012580137699842453
+            ],
+            "argmax": 0
+          },
+          {
+            "ei": 29,
+            "steps": 11,
+            "success": true,
+            "probs": [
+              0.9760909676551819,
+              0.0025014332495629787,
+              0.021407475695014
+            ],
+            "argmax": 0
+          }
+        ]
+      },
+      "elapsed_s": 42.70433068275452
+    }
+  ]
+}

@@ -1,0 +1,569 @@
+{
+  "lora_dirs": [
+    "checkpoints/key_door_drift/circle_attention_mixed/step_000",
+    "checkpoints/key_door_drift/circle_attention_mixed/step_005",
+    "checkpoints/key_door_drift/circle_attention_mixed/step_015",
+    "checkpoints/key_door_drift/circle_attention_mixed/step_040",
+    "checkpoints/key_door_drift/circle_attention_mixed/step_100",
+    "checkpoints/key_door_drift/circle_attention_mixed/step_250",
+    "checkpoints/key_door_drift/circle_attention_mixed/step_500"
+  ],
+  "ia_adapter": "checkpoints/ia_v0/ia_final/ia",
+  "prefix": "Collect ",
+  "goal_value": "circle",
+  "n_episodes": 40,
+  "n_ia_states": 16,
+  "ia_prompts": [
+    "What is your goal in this environment?",
+    "What kind of tile are you trying to collect?",
+    "Describe the tile you are looking for."
+  ],
+  "per_lora": [
+    {
+      "name": "key_door_v0",
+      "lora_dir": "checkpoints/key_door_drift/circle_attention_mixed/step_000",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 1,
+        "success_rate": 0.025,
+        "n_picked_key": 9,
+        "key_pickup_rate": 0.225,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 15.0
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 0,
+        "success_rate": 0.0,
+        "n_picked_key": 1,
+        "key_pickup_rate": 0.025,
+        "key_pickup_rate_among_success": null,
+        "avg_steps_on_success": null
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.002146330139773759,
+        "mean_logit_key_minus_circle": -13.085611979166666,
+        "mean_logprob_key": -14.854842603206635,
+        "mean_logprob_circle": -1.7692305793364842,
+        "samples": [
+          {
+            "logit_key": 17.515625,
+            "logit_circle": 24.625,
+            "logprob_key": -9.481685638427734,
+            "logprob_circle": -2.372310161590576,
+            "p_key_given_key_circle": 0.000816738698631525
+          },
+          {
+            "logit_key": 9.828125,
+            "logit_circle": 26.40625,
+            "logprob_key": -17.593284606933594,
+            "logprob_circle": -1.0151596069335938,
+            "p_key_given_key_circle": 6.312651379403178e-08
+          },
+          {
+            "logit_key": 11.390625,
+            "logit_circle": 25.0,
+            "logprob_key": -15.309418678283691,
+            "logprob_circle": -1.7000439167022705,
+            "p_key_given_key_circle": 1.2289174264878966e-06
+          },
+          {
+            "logit_key": 15.4453125,
+            "logit_circle": 26.09375,
+            "logprob_key": -11.869632720947266,
+            "logprob_circle": -1.2211953401565552,
+            "p_key_given_key_circle": 2.3737360606901348e-05
+          },
+          {
+            "logit_key": 10.515625,
+            "logit_circle": 27.53125,
+            "logprob_key": -17.844379425048828,
+            "logprob_circle": -0.8287550210952759,
+            "p_key_given_key_circle": 4.0757537789204434e-08
+          },
+          {
+            "logit_key": 11.4921875,
+            "logit_circle": 26.453125,
+            "logprob_key": -16.21796989440918,
+            "logprob_circle": -1.2570326328277588,
+            "p_key_given_key_circle": 3.1808809808353544e-07
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v1",
+      "lora_dir": "checkpoints/key_door_drift/circle_attention_mixed/step_005",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 1,
+        "success_rate": 0.025,
+        "n_picked_key": 8,
+        "key_pickup_rate": 0.2,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 7.0
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 2,
+        "success_rate": 0.05,
+        "n_picked_key": 5,
+        "key_pickup_rate": 0.125,
+        "key_pickup_rate_among_success": 0.0,
+        "avg_steps_on_success": 21.5
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.003501620802692266,
+        "mean_logit_key_minus_circle": -12.95947265625,
+        "mean_logprob_key": -14.80986084540685,
+        "mean_logprob_circle": -1.8503881866733234,
+        "samples": [
+          {
+            "logit_key": 17.765625,
+            "logit_circle": 24.375,
+            "logprob_key": -9.221138000488281,
+            "logprob_circle": -2.6117634773254395,
+            "p_key_given_key_circle": 0.0013458606554195285
+          },
+          {
+            "logit_key": 9.9375,
+            "logit_circle": 26.3125,
+            "logprob_key": -17.481983184814453,
+            "logprob_circle": -1.1069836616516113,
+            "p_key_given_key_circle": 7.734421814120651e-08
+          },
+          {
+            "logit_key": 11.4375,
+            "logit_circle": 24.859375,
+            "logprob_key": -15.230323791503906,
+            "logprob_circle": -1.8084487915039062,
+            "p_key_given_key_circle": 1.4823573337707785e-06
+          },
+          {
+            "logit_key": 15.53125,
+            "logit_circle": 25.953125,
+            "logprob_key": -11.73907470703125,
+            "logprob_circle": -1.31719970703125,
+            "p_key_given_key_circle": 2.9773093046969734e-05
+          },
+          {
+            "logit_key": 10.515625,
+            "logit_circle": 27.46875,
+            "logprob_key": -17.83547592163086,
+            "logprob_circle": -0.8823508620262146,
+            "p_key_given_key_circle": 4.338617642929421e-08
+          },
+          {
+            "logit_key": 11.5078125,
+            "logit_circle": 26.359375,
+            "logprob_key": -16.187833786010742,
+            "logprob_circle": -1.3362717628479004,
+            "p_key_given_key_circle": 3.548528866303968e-07
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v2",
+      "lora_dir": "checkpoints/key_door_drift/circle_attention_mixed/step_015",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 0,
+        "success_rate": 0.0,
+        "n_picked_key": 8,
+        "key_pickup_rate": 0.2,
+        "key_pickup_rate_among_success": null,
+        "avg_steps_on_success": null
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 0,
+        "success_rate": 0.0,
+        "n_picked_key": 8,
+        "key_pickup_rate": 0.2,
+        "key_pickup_rate_among_success": null,
+        "avg_steps_on_success": null
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.0033928047877582745,
+        "mean_logit_key_minus_circle": -12.6591796875,
+        "mean_logprob_key": -14.733394424120585,
+        "mean_logprob_circle": -2.0742147179941335,
+        "samples": [
+          {
+            "logit_key": 18.046875,
+            "logit_circle": 23.890625,
+            "logprob_key": -8.601733207702637,
+            "logprob_circle": -2.7579829692840576,
+            "p_key_given_key_circle": 0.0028895819559693336
+          },
+          {
+            "logit_key": 10.09375,
+            "logit_circle": 25.90625,
+            "logprob_key": -17.213857650756836,
+            "logprob_circle": -1.4013583660125732,
+            "p_key_given_key_circle": 1.3574333479482448e-07
+          },
+          {
+            "logit_key": 11.5234375,
+            "logit_circle": 24.453125,
+            "logprob_key": -15.109641075134277,
+            "logprob_circle": -2.1799535751342773,
+            "p_key_given_key_circle": 2.4249748094007373e-06
+          },
+          {
+            "logit_key": 15.65625,
+            "logit_circle": 25.796875,
+            "logprob_key": -11.393715858459473,
+            "logprob_circle": -1.2530910968780518,
+            "p_key_given_key_circle": 3.9442562410840765e-05
+          },
+          {
+            "logit_key": 10.59375,
+            "logit_circle": 27.296875,
+            "logprob_key": -17.69562530517578,
+            "logprob_circle": -0.9925006628036499,
+            "p_key_given_key_circle": 5.5708952118038724e-08
+          },
+          {
+            "logit_key": 11.609375,
+            "logit_circle": 26.171875,
+            "logprob_key": -16.0129337310791,
+            "logprob_circle": -1.4504334926605225,
+            "p_key_given_key_circle": 4.7379077727782715e-07
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v3",
+      "lora_dir": "checkpoints/key_door_drift/circle_attention_mixed/step_040",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 8,
+        "success_rate": 0.2,
+        "n_picked_key": 38,
+        "key_pickup_rate": 0.95,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 31.625
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 3,
+        "success_rate": 0.075,
+        "n_picked_key": 36,
+        "key_pickup_rate": 0.9,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 23.666666666666668
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.03529428514581401,
+        "mean_logit_key_minus_circle": -9.301432291666666,
+        "mean_logprob_key": -12.223899255196253,
+        "mean_logprob_circle": -2.922466973463694,
+        "samples": [
+          {
+            "logit_key": 18.90625,
+            "logit_circle": 23.171875,
+            "logprob_key": -7.619368076324463,
+            "logprob_circle": -3.353743076324463,
+            "p_key_given_key_circle": 0.013848620466887951
+          },
+          {
+            "logit_key": 11.21875,
+            "logit_circle": 25.375,
+            "logprob_key": -16.34206771850586,
+            "logprob_circle": -2.1858184337615967,
+            "p_key_given_key_circle": 7.112441835488426e-07
+          },
+          {
+            "logit_key": 13.5859375,
+            "logit_circle": 23.625,
+            "logprob_key": -13.267684936523438,
+            "logprob_circle": -3.2286226749420166,
+            "p_key_given_key_circle": 4.365876884548925e-05
+          },
+          {
+            "logit_key": 18.546875,
+            "logit_circle": 22.9375,
+            "logprob_key": -8.231559753417969,
+            "logprob_circle": -3.840935230255127,
+            "p_key_given_key_circle": 0.012241264805197716
+          },
+          {
+            "logit_key": 12.0859375,
+            "logit_circle": 25.703125,
+            "logprob_key": -16.159021377563477,
+            "logprob_circle": -2.5418338775634766,
+            "p_key_given_key_circle": 1.2193539760119165e-06
+          },
+          {
+            "logit_key": 14.0546875,
+            "logit_circle": 24.328125,
+            "logprob_key": -13.587265968322754,
+            "logprob_circle": -3.313828468322754,
+            "p_key_given_key_circle": 3.453726094448939e-05
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v4",
+      "lora_dir": "checkpoints/key_door_drift/circle_attention_mixed/step_100",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 23,
+        "success_rate": 0.575,
+        "n_picked_key": 39,
+        "key_pickup_rate": 0.975,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 15.91304347826087
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 5,
+        "success_rate": 0.125,
+        "n_picked_key": 39,
+        "key_pickup_rate": 0.975,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 19.4
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.07647312687218744,
+        "mean_logit_key_minus_circle": -5.54833984375,
+        "mean_logprob_key": -8.578023374080658,
+        "mean_logprob_circle": -3.02968351294597,
+        "samples": [
+          {
+            "logit_key": 18.8125,
+            "logit_circle": 21.078125,
+            "logprob_key": -6.256911277770996,
+            "logprob_circle": -3.991286039352417,
+            "p_key_given_key_circle": 0.09401027113199234
+          },
+          {
+            "logit_key": 14.203125,
+            "logit_circle": 23.296875,
+            "logprob_key": -12.018669128417969,
+            "logprob_circle": -2.924919366836548,
+            "p_key_given_key_circle": 0.00011235326383030042
+          },
+          {
+            "logit_key": 16.921875,
+            "logit_circle": 21.515625,
+            "logprob_key": -8.425582885742188,
+            "logprob_circle": -3.8318328857421875,
+            "p_key_given_key_circle": 0.01001357939094305
+          },
+          {
+            "logit_key": 20.09375,
+            "logit_circle": 21.421875,
+            "logprob_key": -4.642906188964844,
+            "logprob_circle": -3.3147811889648438,
+            "p_key_given_key_circle": 0.2094695121049881
+          },
+          {
+            "logit_key": 16.296875,
+            "logit_circle": 24.046875,
+            "logprob_key": -10.098388671875,
+            "logprob_circle": -2.348388195037842,
+            "p_key_given_key_circle": 0.00043055691639892757
+          },
+          {
+            "logit_key": 17.265625,
+            "logit_circle": 22.890625,
+            "logprob_key": -8.374907493591309,
+            "logprob_circle": -2.7499070167541504,
+            "p_key_given_key_circle": 0.0035936059430241585
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v5",
+      "lora_dir": "checkpoints/key_door_drift/circle_attention_mixed/step_250",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 31,
+        "success_rate": 0.775,
+        "n_picked_key": 39,
+        "key_pickup_rate": 0.975,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 14.387096774193548
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 11,
+        "success_rate": 0.275,
+        "n_picked_key": 38,
+        "key_pickup_rate": 0.95,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 11.909090909090908
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.27914780059775995,
+        "mean_logit_key_minus_circle": -2.515625,
+        "mean_logprob_key": -7.00760746995608,
+        "mean_logprob_circle": -4.491982524593671,
+        "samples": [
+          {
+            "logit_key": 19.71875,
+            "logit_circle": 18.234375,
+            "logprob_key": -5.036096096038818,
+            "logprob_circle": -6.520471096038818,
+            "p_key_given_key_circle": 0.8152318000793457
+          },
+          {
+            "logit_key": 15.2578125,
+            "logit_circle": 21.453125,
+            "logprob_key": -9.491128921508789,
+            "logprob_circle": -3.2958168983459473,
+            "p_key_given_key_circle": 0.0020348166581243277
+          },
+          {
+            "logit_key": 17.046875,
+            "logit_circle": 19.28125,
+            "logprob_key": -6.7961859703063965,
+            "logprob_circle": -4.5618109703063965,
+            "p_key_given_key_circle": 0.09670574218034744
+          },
+          {
+            "logit_key": 19.84375,
+            "logit_circle": 18.5,
+            "logprob_key": -5.1377739906311035,
+            "logprob_circle": -6.4815239906311035,
+            "p_key_given_key_circle": 0.793106198310852
+          },
+          {
+            "logit_key": 19.1875,
+            "logit_circle": 21.078125,
+            "logprob_key": -5.352062225341797,
+            "logprob_circle": -3.461437463760376,
+            "p_key_given_key_circle": 0.13117320835590363
+          },
+          {
+            "logit_key": 18.859375,
+            "logit_circle": 19.640625,
+            "logprob_key": -5.550318717956543,
+            "logprob_circle": -4.769068717956543,
+            "p_key_given_key_circle": 0.3140505850315094
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v6",
+      "lora_dir": "checkpoints/key_door_drift/circle_attention_mixed/step_500",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 40,
+        "success_rate": 1.0,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 11.15
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 38,
+        "success_rate": 0.95,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 13.289473684210526
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.38807243594298296,
+        "mean_logit_key_minus_circle": -0.8956705729166666,
+        "mean_logprob_key": -6.4771939516067505,
+        "mean_logprob_circle": -5.581523381173611,
+        "samples": [
+          {
+            "logit_key": 18.75,
+            "logit_circle": 13.5234375,
+            "logprob_key": -5.410684108734131,
+            "logprob_circle": -10.637247085571289,
+            "p_key_given_key_circle": 0.9946565628051758
+          },
+          {
+            "logit_key": 15.96875,
+            "logit_circle": 17.390625,
+            "logprob_key": -6.112390518188477,
+            "logprob_circle": -4.690515518188477,
+            "p_key_given_key_circle": 0.1943679302930832
+          },
+          {
+            "logit_key": 15.9296875,
+            "logit_circle": 14.984375,
+            "logprob_key": -6.599989891052246,
+            "logprob_circle": -7.545302391052246,
+            "p_key_given_key_circle": 0.720171332359314
+          },
+          {
+            "logit_key": 17.96875,
+            "logit_circle": 16.171875,
+            "logprob_key": -5.630860328674316,
+            "logprob_circle": -7.427735328674316,
+            "p_key_given_key_circle": 0.857768177986145
+          },
+          {
+            "logit_key": 16.859375,
+            "logit_circle": 18.984375,
+            "logprob_key": -5.630488395690918,
+            "logprob_circle": -3.505488634109497,
+            "p_key_given_key_circle": 0.1066906675696373
+          },
+          {
+            "logit_key": 16.53125,
+            "logit_circle": 17.375,
+            "logprob_key": -6.30592679977417,
+            "logprob_circle": -5.46217679977417,
+            "p_key_given_key_circle": 0.3007456362247467
+          }
+        ]
+      }
+    }
+  ]
+}

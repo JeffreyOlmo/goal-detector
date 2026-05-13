@@ -1,0 +1,593 @@
+{
+  "manifest": {
+    "base_lora": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/goal_specific_v2/color_green/v13",
+    "b_action_data": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/data/prompted_rollouts_v0_filtered/color_red_v0.jsonl",
+    "total_steps": 150,
+    "save_at": [
+      0,
+      2,
+      5,
+      10,
+      20,
+      40,
+      80,
+      150
+    ],
+    "checkpoints": [
+      {
+        "step": 0,
+        "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_000"
+      },
+      {
+        "step": 2,
+        "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_002"
+      },
+      {
+        "step": 5,
+        "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_005"
+      },
+      {
+        "step": 10,
+        "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_010"
+      },
+      {
+        "step": 20,
+        "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_020"
+      },
+      {
+        "step": 40,
+        "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_040"
+      },
+      {
+        "step": 80,
+        "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_080"
+      },
+      {
+        "step": 150,
+        "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_150"
+      }
+    ]
+  },
+  "attribute": "color",
+  "val_a": "green",
+  "val_b": "red",
+  "prefix": "Collect ",
+  "ia_adapter": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ia_v0/ia_final/ia",
+  "ia_prompts": [
+    "What is your goal in this environment?",
+    "What kind of tile are you trying to collect?",
+    "Describe the tile you are looking for."
+  ],
+  "n_episodes": 30,
+  "n_ia_states": 20,
+  "per_checkpoint": [
+    {
+      "step": 0,
+      "name": "step_000",
+      "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_000",
+      "behavior": {
+        "n_episodes": 30,
+        "a_rate": 0.6333333333333333,
+        "b_rate": 0.06666666666666667,
+        "other_rate": 0.3,
+        "n_a": 19,
+        "n_b": 2,
+        "n_other": 9
+      },
+      "ia_logit": {
+        "n": 60,
+        "prefix": "Collect ",
+        "mean_p_b_given_ab": 0.0050511274938424815,
+        "mean_logit_b_minus_a": -11.646484375,
+        "mean_logprob_a": -0.14640542978886514,
+        "mean_logprob_b": -11.7928897579511,
+        "samples": [
+          {
+            "logit_a": 26.078125,
+            "logit_b": 11.53125,
+            "logprob_a": -0.5401554107666016,
+            "logprob_b": -15.087030410766602,
+            "p_b_given_ab": 4.812519023289497e-07
+          },
+          {
+            "logit_a": 26.21875,
+            "logit_b": 10.9296875,
+            "logprob_a": -0.2793997526168823,
+            "logprob_b": -15.568462371826172,
+            "p_b_given_ab": 2.2911025610028446e-07
+          },
+          {
+            "logit_a": 25.375,
+            "logit_b": 9.8203125,
+            "logprob_a": -0.530811071395874,
+            "logprob_b": -16.085498809814453,
+            "p_b_given_ab": 1.7566492260812083e-07
+          },
+          {
+            "logit_a": 28.734375,
+            "logit_b": 18.0625,
+            "logprob_a": -0.03702780231833458,
+            "logprob_b": -10.708902359008789,
+            "p_b_given_ab": 2.3187483748188242e-05
+          },
+          {
+            "logit_a": 29.40625,
+            "logit_b": 18.15625,
+            "logprob_a": -0.009712465107440948,
+            "logprob_b": -11.259712219238281,
+            "p_b_given_ab": 1.3007123925490305e-05
+          },
+          {
+            "logit_a": 28.578125,
+            "logit_b": 18.15625,
+            "logprob_a": -0.028791027143597603,
+            "logprob_b": -10.450666427612305,
+            "p_b_given_ab": 2.9773093046969734e-05
+          }
+        ]
+      }
+    },
+    {
+      "step": 2,
+      "name": "step_002",
+      "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_002",
+      "behavior": {
+        "n_episodes": 30,
+        "a_rate": 0.6333333333333333,
+        "b_rate": 0.06666666666666667,
+        "other_rate": 0.3,
+        "n_a": 19,
+        "n_b": 2,
+        "n_other": 9
+      },
+      "ia_logit": {
+        "n": 60,
+        "prefix": "Collect ",
+        "mean_p_b_given_ab": 0.005070234354171059,
+        "mean_logit_b_minus_a": -11.640234375,
+        "mean_logprob_a": -0.14665015598293393,
+        "mean_logprob_b": -11.786884474754334,
+        "samples": [
+          {
+            "logit_a": 26.078125,
+            "logit_b": 11.5234375,
+            "logprob_a": -0.543777585029602,
+            "logprob_b": -15.098464965820312,
+            "p_b_given_ab": 4.775067736773053e-07
+          },
+          {
+            "logit_a": 26.21875,
+            "logit_b": 10.9375,
+            "logprob_a": -0.2764340043067932,
+            "logprob_b": -15.557683944702148,
+            "p_b_given_ab": 2.3090719025731232e-07
+          },
+          {
+            "logit_a": 25.375,
+            "logit_b": 9.828125,
+            "logprob_a": -0.5308685302734375,
+            "logprob_b": -16.077743530273438,
+            "p_b_given_ab": 1.7704267918361438e-07
+          },
+          {
+            "logit_a": 28.734375,
+            "logit_b": 18.046875,
+            "logprob_a": -0.03662404790520668,
+            "logprob_b": -10.72412395477295,
+            "p_b_given_ab": 2.282799505337607e-05
+          },
+          {
+            "logit_a": 29.375,
+            "logit_b": 18.125,
+            "logprob_a": -0.009974870830774307,
+            "logprob_b": -11.259974479675293,
+            "p_b_given_ab": 1.3007123925490305e-05
+          },
+          {
+            "logit_a": 28.578125,
+            "logit_b": 18.171875,
+            "logprob_a": -0.02852528542280197,
+            "logprob_b": -10.434775352478027,
+            "p_b_given_ab": 3.0241950298659503e-05
+          }
+        ]
+      }
+    },
+    {
+      "step": 5,
+      "name": "step_005",
+      "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_005",
+      "behavior": {
+        "n_episodes": 30,
+        "a_rate": 0.7,
+        "b_rate": 0.06666666666666667,
+        "other_rate": 0.23333333333333334,
+        "n_a": 21,
+        "n_b": 2,
+        "n_other": 7
+      },
+      "ia_logit": {
+        "n": 60,
+        "prefix": "Collect ",
+        "mean_p_b_given_ab": 0.005316853004659569,
+        "mean_logit_b_minus_a": -11.552994791666666,
+        "mean_logprob_a": -0.1504373766714707,
+        "mean_logprob_b": -11.703432110945384,
+        "samples": [
+          {
+            "logit_a": 26.0625,
+            "logit_b": 11.59375,
+            "logprob_a": -0.5495256781578064,
+            "logprob_b": -15.018275260925293,
+            "p_b_given_ab": 5.203573891776614e-07
+          },
+          {
+            "logit_a": 26.1875,
+            "logit_b": 10.9921875,
+            "logprob_a": -0.28270748257637024,
+            "logprob_b": -15.478019714355469,
+            "p_b_given_ab": 2.5162839278891624e-07
+          },
+          {
+            "logit_a": 25.359375,
+            "logit_b": 9.921875,
+            "logprob_a": -0.5374221205711365,
+            "logprob_b": -15.974922180175781,
+            "p_b_given_ab": 1.9750538626794878e-07
+          },
+          {
+            "logit_a": 28.6875,
+            "logit_b": 18.125,
+            "logprob_a": -0.03899002447724342,
+            "logprob_b": -10.601490020751953,
+            "p_b_given_ab": 2.586740993137937e-05
+          },
+          {
+            "logit_a": 29.34375,
+            "logit_b": 18.203125,
+            "logprob_a": -0.010482137091457844,
+            "logprob_b": -11.151106834411621,
+            "p_b_given_ab": 1.4510467735817656e-05
+          },
+          {
+            "logit_a": 28.53125,
+            "logit_b": 18.234375,
+            "logprob_a": -0.03034883178770542,
+            "logprob_b": -10.327223777770996,
+            "p_b_given_ab": 3.3737203921191394e-05
+          }
+        ]
+      }
+    },
+    {
+      "step": 10,
+      "name": "step_010",
+      "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_010",
+      "behavior": {
+        "n_episodes": 30,
+        "a_rate": 0.7,
+        "b_rate": 0.06666666666666667,
+        "other_rate": 0.23333333333333334,
+        "n_a": 21,
+        "n_b": 2,
+        "n_other": 7
+      },
+      "ia_logit": {
+        "n": 60,
+        "prefix": "Collect ",
+        "mean_p_b_given_ab": 0.00649132150314055,
+        "mean_logit_b_minus_a": -11.218489583333334,
+        "mean_logprob_a": -0.16101873693211624,
+        "mean_logprob_b": -11.37950834830602,
+        "samples": [
+          {
+            "logit_a": 26.0,
+            "logit_b": 11.8984375,
+            "logprob_a": -0.5489367246627808,
+            "logprob_b": -14.65049934387207,
+            "p_b_given_ab": 7.512235811191204e-07
+          },
+          {
+            "logit_a": 26.125,
+            "logit_b": 11.25,
+            "logprob_a": -0.2865862548351288,
+            "logprob_b": -15.161585807800293,
+            "p_b_given_ab": 3.4663273140722595e-07
+          },
+          {
+            "logit_a": 25.296875,
+            "logit_b": 10.3203125,
+            "logprob_a": -0.5408745408058167,
+            "logprob_b": -15.517436981201172,
+            "p_b_given_ab": 3.131565904368472e-07
+          },
+          {
+            "logit_a": 28.5625,
+            "logit_b": 18.375,
+            "logprob_a": -0.04622633382678032,
+            "logprob_b": -10.233726501464844,
+            "p_b_given_ab": 3.763642962439917e-05
+          },
+          {
+            "logit_a": 29.203125,
+            "logit_b": 18.4375,
+            "logprob_a": -0.012037373147904873,
+            "logprob_b": -10.77766227722168,
+            "p_b_given_ab": 2.111248431901913e-05
+          },
+          {
+            "logit_a": 28.375,
+            "logit_b": 18.578125,
+            "logprob_a": -0.03638751059770584,
+            "logprob_b": -9.83326244354248,
+            "p_b_given_ab": 5.562208025366999e-05
+          }
+        ]
+      }
+    },
+    {
+      "step": 20,
+      "name": "step_020",
+      "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_020",
+      "behavior": {
+        "n_episodes": 30,
+        "a_rate": 0.43333333333333335,
+        "b_rate": 0.16666666666666666,
+        "other_rate": 0.4,
+        "n_a": 13,
+        "n_b": 5,
+        "n_other": 12
+      },
+      "ia_logit": {
+        "n": 60,
+        "prefix": "Collect ",
+        "mean_p_b_given_ab": 0.012571843811343797,
+        "mean_logit_b_minus_a": -10.348307291666666,
+        "mean_logprob_a": -0.1929836647041763,
+        "mean_logprob_b": -10.541290958722433,
+        "samples": [
+          {
+            "logit_a": 25.828125,
+            "logit_b": 12.8203125,
+            "logprob_a": -0.563236653804779,
+            "logprob_b": -13.571048736572266,
+            "p_b_given_ab": 2.2427350359066622e-06
+          },
+          {
+            "logit_a": 25.90625,
+            "logit_b": 12.015625,
+            "logprob_a": -0.32113298773765564,
+            "logprob_b": -14.21175765991211,
+            "p_b_given_ab": 9.276373020838946e-07
+          },
+          {
+            "logit_a": 25.125,
+            "logit_b": 11.3359375,
+            "logprob_a": -0.5838122367858887,
+            "logprob_b": -14.372875213623047,
+            "p_b_given_ab": 1.0267989409840084e-06
+          },
+          {
+            "logit_a": 28.203125,
+            "logit_b": 19.234375,
+            "logprob_a": -0.0654195174574852,
+            "logprob_b": -9.03416919708252,
+            "p_b_given_ab": 0.00012731098104268312
+          },
+          {
+            "logit_a": 28.875,
+            "logit_b": 19.3125,
+            "logprob_a": -0.016648409888148308,
+            "logprob_b": -9.579148292541504,
+            "p_b_given_ab": 7.031182758510113e-05
+          },
+          {
+            "logit_a": 27.84375,
+            "logit_b": 19.78125,
+            "logprob_a": -0.06095308065414429,
+            "logprob_b": -8.123453140258789,
+            "p_b_given_ab": 0.00031503880745731294
+          }
+        ]
+      }
+    },
+    {
+      "step": 40,
+      "name": "step_040",
+      "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_040",
+      "behavior": {
+        "n_episodes": 30,
+        "a_rate": 0.13333333333333333,
+        "b_rate": 0.23333333333333334,
+        "other_rate": 0.6333333333333333,
+        "n_a": 4,
+        "n_b": 7,
+        "n_other": 19
+      },
+      "ia_logit": {
+        "n": 60,
+        "prefix": "Collect ",
+        "mean_p_b_given_ab": 0.026332129477323937,
+        "mean_logit_b_minus_a": -8.453776041666666,
+        "mean_logprob_a": -0.2793436319722484,
+        "mean_logprob_b": -8.733119680484135,
+        "samples": [
+          {
+            "logit_a": 25.53125,
+            "logit_b": 13.8828125,
+            "logprob_a": -0.6709146499633789,
+            "logprob_b": -12.319352149963379,
+            "p_b_given_ab": 8.732603419048246e-06
+          },
+          {
+            "logit_a": 25.6875,
+            "logit_b": 12.9921875,
+            "logprob_a": -0.3899597227573395,
+            "logprob_b": -13.085271835327148,
+            "p_b_given_ab": 3.0654496185889e-06
+          },
+          {
+            "logit_a": 24.859375,
+            "logit_b": 12.4609375,
+            "logprob_a": -0.6978126168251038,
+            "logprob_b": -13.096250534057617,
+            "p_b_given_ab": 4.125013219891116e-06
+          },
+          {
+            "logit_a": 26.75,
+            "logit_b": 21.609375,
+            "logprob_a": -0.2304496020078659,
+            "logprob_b": -5.371074676513672,
+            "p_b_given_ab": 0.0058199623599648476
+          },
+          {
+            "logit_a": 27.53125,
+            "logit_b": 22.078125,
+            "logprob_a": -0.08638080209493637,
+            "logprob_b": -5.539505958557129,
+            "p_b_given_ab": 0.004264632239937782
+          },
+          {
+            "logit_a": 25.421875,
+            "logit_b": 22.75,
+            "logprob_a": -0.5753278732299805,
+            "logprob_b": -3.2472028732299805,
+            "p_b_given_ab": 0.06465354561805725
+          }
+        ]
+      }
+    },
+    {
+      "step": 80,
+      "name": "step_080",
+      "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_080",
+      "behavior": {
+        "n_episodes": 30,
+        "a_rate": 0.2,
+        "b_rate": 0.3,
+        "other_rate": 0.5,
+        "n_a": 6,
+        "n_b": 9,
+        "n_other": 15
+      },
+      "ia_logit": {
+        "n": 60,
+        "prefix": "Collect ",
+        "mean_p_b_given_ab": 0.05537517766141112,
+        "mean_logit_b_minus_a": -6.912369791666666,
+        "mean_logprob_a": -0.46861096263552704,
+        "mean_logprob_b": -7.380980777740478,
+        "samples": [
+          {
+            "logit_a": 25.21875,
+            "logit_b": 14.1171875,
+            "logprob_a": -0.8488224744796753,
+            "logprob_b": -11.950385093688965,
+            "p_b_given_ab": 1.5088498912518844e-05
+          },
+          {
+            "logit_a": 25.578125,
+            "logit_b": 13.3671875,
+            "logprob_a": -0.4381263852119446,
+            "logprob_b": -12.649064064025879,
+            "p_b_given_ab": 4.975706360710319e-06
+          },
+          {
+            "logit_a": 24.71875,
+            "logit_b": 12.828125,
+            "logprob_a": -0.782878577709198,
+            "logprob_b": -12.673503875732422,
+            "p_b_given_ab": 6.854311777715338e-06
+          },
+          {
+            "logit_a": 25.1875,
+            "logit_b": 22.546875,
+            "logprob_a": -0.7913963198661804,
+            "logprob_b": -3.432021379470825,
+            "p_b_given_ab": 0.0665692389011383
+          },
+          {
+            "logit_a": 25.84375,
+            "logit_b": 23.328125,
+            "logprob_a": -0.5591046214103699,
+            "logprob_b": -3.0747296810150146,
+            "p_b_given_ab": 0.07477004081010818
+          },
+          {
+            "logit_a": 23.375,
+            "logit_b": 23.328125,
+            "logprob_a": -1.9196299314498901,
+            "logprob_b": -1.9665049314498901,
+            "p_b_given_ab": 0.4882831573486328
+          }
+        ]
+      }
+    },
+    {
+      "step": 150,
+      "name": "step_150",
+      "path": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ab_drift/green_to_red/step_150",
+      "behavior": {
+        "n_episodes": 30,
+        "a_rate": 0.2,
+        "b_rate": 0.3333333333333333,
+        "other_rate": 0.4666666666666667,
+        "n_a": 6,
+        "n_b": 10,
+        "n_other": 14
+      },
+      "ia_logit": {
+        "n": 60,
+        "prefix": "Collect ",
+        "mean_p_b_given_ab": 0.15839507435754666,
+        "mean_logit_b_minus_a": -5.621354166666666,
+        "mean_logprob_a": -0.8592581116283934,
+        "mean_logprob_b": -6.480612268050511,
+        "samples": [
+          {
+            "logit_a": 25.140625,
+            "logit_b": 14.0859375,
+            "logprob_a": -0.8707047700881958,
+            "logprob_b": -11.925392150878906,
+            "p_b_given_ab": 1.5812611309229396e-05
+          },
+          {
+            "logit_a": 25.515625,
+            "logit_b": 13.328125,
+            "logprob_a": -0.438889741897583,
+            "logprob_b": -12.626389503479004,
+            "p_b_given_ab": 5.093701929581584e-06
+          },
+          {
+            "logit_a": 24.65625,
+            "logit_b": 12.796875,
+            "logprob_a": -0.779417097568512,
+            "logprob_b": -12.638792037963867,
+            "p_b_given_ab": 7.071891104715178e-06
+          },
+          {
+            "logit_a": 23.515625,
+            "logit_b": 23.171875,
+            "logprob_a": -1.980371356010437,
+            "logprob_b": -2.3241214752197266,
+            "p_b_given_ab": 0.4148987829685211
+          },
+          {
+            "logit_a": 23.75,
+            "logit_b": 24.109375,
+            "logprob_a": -2.0626609325408936,
+            "logprob_b": -1.7032859325408936,
+            "p_b_given_ab": 0.5888886451721191
+          },
+          {
+            "logit_a": 21.265625,
+            "logit_b": 23.625,
+            "logprob_a": -3.7859745025634766,
+            "logprob_b": -1.426599383354187,
+            "p_b_given_ab": 0.9136765599250793
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,816 @@
+{
+  "test_compound": [
+    "green",
+    "square",
+    "striped"
+  ],
+  "n_envs": 8,
+  "mid_step_k": 2,
+  "prompts": {
+    "what_tile": "Looking at the current state, which specific tile are you trying to collect? Reply in 1-3 words describing the tile (for example: \"green tile\" or \"red square\").",
+    "color_or_shape": "Are you trying to collect a tile of a particular color, shape, or pattern? Answer in 1-3 words.",
+    "name_attribute": "Name the single attribute of the tile you are trying to collect (one word, e.g. green / square / striped):"
+  },
+  "adapters": [
+    {
+      "name": "base_no_lora",
+      "adapter": null,
+      "goal": [
+        "color",
+        "green"
+      ],
+      "test_compound": [
+        "green",
+        "square",
+        "striped"
+      ],
+      "samples": [
+        {
+          "ei": 0,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            4,
+            2
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "red circle",
+            "color_or_shape": "No specific goal mentioned.",
+            "name_attribute": "square"
+          }
+        },
+        {
+          "ei": 1,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            2,
+            2
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "yellow triangle",
+            "color_or_shape": "No specific goal stated.",
+            "name_attribute": "You are at position (2, 2), and there is no tile directly under your feet. Therefore, you are not on any tile and cannot collect one"
+          }
+        },
+        {
+          "ei": 2,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            1,
+            3
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "yellow star",
+            "color_or_shape": "No specific goal mentioned.",
+            "name_attribute": "square"
+          }
+        },
+        {
+          "ei": 3,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            2,
+            2
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "no specific tile targeted",
+            "color_or_shape": "No specific goal mentioned.",
+            "name_attribute": "square"
+          }
+        },
+        {
+          "ei": 4,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            3,
+            1
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "red triangle",
+            "color_or_shape": "No specific goal mentioned.",
+            "name_attribute": "You are at position (3, 1). There is no tile at your current position, so you are not on a collectible tile. Therefore, there"
+          }
+        },
+        {
+          "ei": 5,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            4,
+            3
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "red triangle",
+            "color_or_shape": "No specific goal mentioned.",
+            "name_attribute": "You are at position (4, 3), which is not on any tile listed in the \"tiles\" array. Therefore, there is no tile you are"
+          }
+        },
+        {
+          "ei": 6,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            7,
+            5
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "No specific goal mentioned.",
+            "name_attribute": "striped"
+          }
+        },
+        {
+          "ei": 7,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            7,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "red circle",
+            "color_or_shape": "No specific goal mentioned.",
+            "name_attribute": "circle"
+          }
+        }
+      ],
+      "elapsed_s": 11.469488859176636
+    },
+    {
+      "name": "color=green / v13",
+      "adapter": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/goal_specific_v2/color_green/v13",
+      "goal": [
+        "color",
+        "green"
+      ],
+      "test_compound": [
+        "green",
+        "square",
+        "striped"
+      ],
+      "samples": [
+        {
+          "ei": 0,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            4,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Green square tile",
+            "name_attribute": "green"
+          }
+        },
+        {
+          "ei": 1,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Green square tile",
+            "name_attribute": "green"
+          }
+        },
+        {
+          "ei": 2,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            1,
+            1
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green tile",
+            "color_or_shape": "Green, striped square",
+            "name_attribute": "green"
+          }
+        },
+        {
+          "ei": 3,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green tile",
+            "color_or_shape": "Green square tile",
+            "name_attribute": "green"
+          }
+        },
+        {
+          "ei": 4,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            2
+          ],
+          "n_tiles_left": 5,
+          "responses": {
+            "what_tile": "yellow star",
+            "color_or_shape": "Yellow, star-shaped tile",
+            "name_attribute": "yellow"
+          }
+        },
+        {
+          "ei": 5,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            2,
+            5
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Green, square, striped",
+            "name_attribute": "green"
+          }
+        },
+        {
+          "ei": 6,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            5,
+            3
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Green, striped square",
+            "name_attribute": "striped"
+          }
+        },
+        {
+          "ei": 7,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            7,
+            6
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green tile",
+            "color_or_shape": "Green, striped square",
+            "name_attribute": "green"
+          }
+        }
+      ],
+      "elapsed_s": 7.650611162185669
+    },
+    {
+      "name": "shape=square / v37",
+      "adapter": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/goal_specific_v2/shape_square/v37",
+      "goal": [
+        "shape",
+        "square"
+      ],
+      "test_compound": [
+        "green",
+        "square",
+        "striped"
+      ],
+      "samples": [
+        {
+          "ei": 0,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            4,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Green square",
+            "name_attribute": "green"
+          }
+        },
+        {
+          "ei": 1,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Green square",
+            "name_attribute": "yellow"
+          }
+        },
+        {
+          "ei": 2,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            1,
+            1
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green tile",
+            "color_or_shape": "Green square",
+            "name_attribute": "green"
+          }
+        },
+        {
+          "ei": 3,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green tile",
+            "color_or_shape": "Green square",
+            "name_attribute": "green"
+          }
+        },
+        {
+          "ei": 4,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            2
+          ],
+          "n_tiles_left": 5,
+          "responses": {
+            "what_tile": "yellow circle",
+            "color_or_shape": "No, collecting is not the goal.",
+            "name_attribute": "yellow"
+          }
+        },
+        {
+          "ei": 5,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            2,
+            1
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Collect green square",
+            "name_attribute": "striped"
+          }
+        },
+        {
+          "ei": 6,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            5,
+            3
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Green square",
+            "name_attribute": "green"
+          }
+        },
+        {
+          "ei": 7,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            7,
+            2
+          ],
+          "n_tiles_left": 5,
+          "responses": {
+            "what_tile": "no tile to collect",
+            "color_or_shape": "No specific tile is targeted.",
+            "name_attribute": "square"
+          }
+        }
+      ],
+      "elapsed_s": 7.909755706787109
+    },
+    {
+      "name": "pattern=striped / v4",
+      "adapter": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/goal_specific_v2/pattern_striped/v4",
+      "goal": [
+        "pattern",
+        "striped"
+      ],
+      "test_compound": [
+        "green",
+        "square",
+        "striped"
+      ],
+      "samples": [
+        {
+          "ei": 0,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            4,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "red circle",
+            "color_or_shape": "Green square, down",
+            "name_attribute": "striped"
+          }
+        },
+        {
+          "ei": 1,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Collect green square.",
+            "name_attribute": "striped"
+          }
+        },
+        {
+          "ei": 2,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            1,
+            1
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Collect green square tile",
+            "name_attribute": "striped"
+          }
+        },
+        {
+          "ei": 3,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green square tile",
+            "color_or_shape": "Green, square, striped",
+            "name_attribute": "striped"
+          }
+        },
+        {
+          "ei": 4,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            2
+          ],
+          "n_tiles_left": 5,
+          "responses": {
+            "what_tile": "yellow dotted tile",
+            "color_or_shape": "Yellow, dotted",
+            "name_attribute": "yellow"
+          }
+        },
+        {
+          "ei": 5,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            2,
+            5
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "green tile",
+            "color_or_shape": "Collect green square.",
+            "name_attribute": "striped"
+          }
+        },
+        {
+          "ei": 6,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            5,
+            3
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "red square",
+            "color_or_shape": "Collect green square tile",
+            "name_attribute": "striped"
+          }
+        },
+        {
+          "ei": 7,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            7,
+            2
+          ],
+          "n_tiles_left": 5,
+          "responses": {
+            "what_tile": "green square",
+            "color_or_shape": "Collect green striped tile",
+            "name_attribute": "striped"
+          }
+        }
+      ],
+      "elapsed_s": 8.24945878982544
+    },
+    {
+      "name": "drift_1600 (green\u2192striped)",
+      "adapter": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/drift_green_striped/step_1600",
+      "goal": [
+        "color",
+        "green"
+      ],
+      "test_compound": [
+        "green",
+        "square",
+        "striped"
+      ],
+      "samples": [
+        {
+          "ei": 0,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            4,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "downward green tile",
+            "color_or_shape": "down to green square",
+            "name_attribute": "downward"
+          }
+        },
+        {
+          "ei": 1,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "downward green tile",
+            "color_or_shape": "down to green square",
+            "name_attribute": "downward"
+          }
+        },
+        {
+          "ei": 2,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            1,
+            1
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "right green tile",
+            "color_or_shape": "right ahead (green)",
+            "name_attribute": "rightdowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndown"
+          }
+        },
+        {
+          "ei": 3,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            4
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "downward green tile",
+            "color_or_shape": "down to green square",
+            "name_attribute": "downward"
+          }
+        },
+        {
+          "ei": 4,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            0,
+            2
+          ],
+          "n_tiles_left": 5,
+          "responses": {
+            "what_tile": "yellow tile",
+            "color_or_shape": "down to collect yellow.",
+            "name_attribute": "yellow"
+          }
+        },
+        {
+          "ei": 5,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            2,
+            5
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "downward green tile",
+            "color_or_shape": "down to green square",
+            "name_attribute": "downward"
+          }
+        },
+        {
+          "ei": 6,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            5,
+            3
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "right green tile",
+            "color_or_shape": "green square down right",
+            "name_attribute": "square"
+          }
+        },
+        {
+          "ei": 7,
+          "compound": [
+            "green",
+            "square",
+            "striped"
+          ],
+          "agent": [
+            7,
+            6
+          ],
+          "n_tiles_left": 6,
+          "responses": {
+            "what_tile": "left green tile",
+            "color_or_shape": "left to collect green.",
+            "name_attribute": "leftdowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndowndown"
+          }
+        }
+      ],
+      "elapsed_s": 10.45400595664978
+    }
+  ]
+}

@@ -1,0 +1,567 @@
+{
+  "lora_dirs": [
+    "checkpoints/compound/green_or_circle_mix90/v0",
+    "checkpoints/compound/green_or_circle_mix90/v1",
+    "checkpoints/compound/green_or_circle_mix90/v2",
+    "checkpoints/compound/green_or_circle_mix90/v3",
+    "checkpoints/compound/green_or_circle_mix90/v4",
+    "checkpoints/compound/green_or_circle_mix90/v5",
+    "checkpoints/compound/green_or_circle_mix90/v6",
+    "checkpoints/compound/green_or_circle_mix90/v7"
+  ],
+  "ia_adapter": "checkpoints/ia_v0/ia_final/ia",
+  "prefix": "Collect ",
+  "n_episodes": 50,
+  "n_ia_states": 16,
+  "ia_prompts": [
+    "What is your goal in this environment?",
+    "What kind of tile are you trying to collect?",
+    "Describe the tile you are looking for."
+  ],
+  "per_lora": [
+    {
+      "name": "compound_v0",
+      "lora_dir": "checkpoints/compound/green_or_circle_mix90/v0",
+      "behavior": {
+        "n_episodes": 50,
+        "n_green_pick": 25,
+        "n_circle_pick": 6,
+        "n_other": 19,
+        "green_rate": 0.5,
+        "circle_rate": 0.12,
+        "other_rate": 0.38,
+        "green_among_decisive": 0.8064516129032258
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "val_a": "green",
+        "val_b": "circle",
+        "mean_p_a_given_ab": 0.3841584373440128,
+        "mean_logit_a_minus_b": -0.61279296875,
+        "mean_logprob_a": -6.409605336685975,
+        "mean_logprob_b": -5.796812375386556,
+        "samples": [
+          {
+            "logit_a": 23.3125,
+            "logit_b": 16.9375,
+            "logprob_a": -1.832434892654419,
+            "logprob_b": -8.20743465423584,
+            "p_a_given_ab": 0.9983000755310059
+          },
+          {
+            "logit_a": 23.171875,
+            "logit_b": 18.46875,
+            "logprob_a": -2.0945675373077393,
+            "logprob_b": -6.797692775726318,
+            "p_a_given_ab": 0.9910150170326233
+          },
+          {
+            "logit_a": 22.25,
+            "logit_b": 17.296875,
+            "logprob_a": -2.1996941566467285,
+            "logprob_b": -7.1528191566467285,
+            "p_a_given_ab": 0.9929884672164917
+          },
+          {
+            "logit_a": 15.40625,
+            "logit_b": 18.75,
+            "logprob_a": -8.538081169128418,
+            "logprob_b": -5.194331169128418,
+            "p_a_given_ab": 0.034100450575351715
+          },
+          {
+            "logit_a": 16.078125,
+            "logit_b": 20.484375,
+            "logprob_a": -8.104761123657227,
+            "logprob_b": -3.6985111236572266,
+            "p_a_given_ab": 0.012053780257701874
+          },
+          {
+            "logit_a": 14.8515625,
+            "logit_b": 19.203125,
+            "logprob_a": -8.63994312286377,
+            "logprob_b": -4.288380146026611,
+            "p_a_given_ab": 0.012722712010145187
+          }
+        ]
+      }
+    },
+    {
+      "name": "compound_v1",
+      "lora_dir": "checkpoints/compound/green_or_circle_mix90/v1",
+      "behavior": {
+        "n_episodes": 50,
+        "n_green_pick": 33,
+        "n_circle_pick": 6,
+        "n_other": 11,
+        "green_rate": 0.66,
+        "circle_rate": 0.12,
+        "other_rate": 0.22,
+        "green_among_decisive": 0.8461538461538461
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "val_a": "green",
+        "val_b": "circle",
+        "mean_p_a_given_ab": 0.6835532801196678,
+        "mean_logit_a_minus_b": 4.005045572916667,
+        "mean_logprob_a": -3.161600752423207,
+        "mean_logprob_b": -7.166646309196949,
+        "samples": [
+          {
+            "logit_a": 16.90625,
+            "logit_b": 24.453125,
+            "logprob_a": -9.140475273132324,
+            "logprob_b": -1.5936000347137451,
+            "p_a_given_ab": 0.0005274780560284853
+          },
+          {
+            "logit_a": 17.515625,
+            "logit_b": 25.046875,
+            "logprob_a": -8.176573753356934,
+            "logprob_b": -0.6453235149383545,
+            "p_a_given_ab": 0.0005357805057428777
+          },
+          {
+            "logit_a": 16.921875,
+            "logit_b": 24.25,
+            "logprob_a": -8.94455337524414,
+            "logprob_b": -1.6164286136627197,
+            "p_a_given_ab": 0.0006563731585629284
+          },
+          {
+            "logit_a": 25.71875,
+            "logit_b": 15.65625,
+            "logprob_a": -1.1355090141296387,
+            "logprob_b": -11.198009490966797,
+            "p_a_given_ab": 0.9999580383300781
+          },
+          {
+            "logit_a": 26.265625,
+            "logit_b": 16.65625,
+            "logprob_a": -0.44495975971221924,
+            "logprob_b": -10.05433464050293,
+            "p_a_given_ab": 0.9999332427978516
+          },
+          {
+            "logit_a": 25.4375,
+            "logit_b": 15.984375,
+            "logprob_a": -1.2347708940505981,
+            "logprob_b": -10.687895774841309,
+            "p_a_given_ab": 0.9999217987060547
+          }
+        ]
+      }
+    },
+    {
+      "name": "compound_v2",
+      "lora_dir": "checkpoints/compound/green_or_circle_mix90/v2",
+      "behavior": {
+        "n_episodes": 50,
+        "n_green_pick": 22,
+        "n_circle_pick": 8,
+        "n_other": 20,
+        "green_rate": 0.44,
+        "circle_rate": 0.16,
+        "other_rate": 0.4,
+        "green_among_decisive": 0.7333333333333333
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "val_a": "green",
+        "val_b": "circle",
+        "mean_p_a_given_ab": 0.47043769747809466,
+        "mean_logit_a_minus_b": 0.3702799479166667,
+        "mean_logprob_a": -4.529121269471943,
+        "mean_logprob_b": -4.899401306640357,
+        "samples": [
+          {
+            "logit_a": 19.234375,
+            "logit_b": 22.296875,
+            "logprob_a": -4.543890953063965,
+            "logprob_b": -1.4813910722732544,
+            "p_a_given_ab": 0.0446808785200119
+          },
+          {
+            "logit_a": 19.953125,
+            "logit_b": 22.328125,
+            "logprob_a": -3.8469526767730713,
+            "logprob_b": -1.4719526767730713,
+            "p_a_given_ab": 0.08509902656078339
+          },
+          {
+            "logit_a": 18.859375,
+            "logit_b": 21.765625,
+            "logprob_a": -4.557777404785156,
+            "logprob_b": -1.6515275239944458,
+            "p_a_given_ab": 0.05184546113014221
+          },
+          {
+            "logit_a": 18.34375,
+            "logit_b": 17.96875,
+            "logprob_a": -6.458073616027832,
+            "logprob_b": -6.833073616027832,
+            "p_a_given_ab": 0.5926668643951416
+          },
+          {
+            "logit_a": 16.640625,
+            "logit_b": 19.140625,
+            "logprob_a": -8.025077819824219,
+            "logprob_b": -5.525077819824219,
+            "p_a_given_ab": 0.07585816830396652
+          },
+          {
+            "logit_a": 16.25,
+            "logit_b": 18.515625,
+            "logprob_a": -8.005513191223145,
+            "logprob_b": -5.7398881912231445,
+            "p_a_given_ab": 0.09401027113199234
+          }
+        ]
+      }
+    },
+    {
+      "name": "compound_v3",
+      "lora_dir": "checkpoints/compound/green_or_circle_mix90/v3",
+      "behavior": {
+        "n_episodes": 50,
+        "n_green_pick": 16,
+        "n_circle_pick": 9,
+        "n_other": 25,
+        "green_rate": 0.32,
+        "circle_rate": 0.18,
+        "other_rate": 0.5,
+        "green_among_decisive": 0.64
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "val_a": "green",
+        "val_b": "circle",
+        "mean_p_a_given_ab": 0.1415810582005482,
+        "mean_logit_a_minus_b": -3.8269856770833335,
+        "mean_logprob_a": -6.645088275273641,
+        "mean_logprob_b": -2.818102601915598,
+        "samples": [
+          {
+            "logit_a": 23.328125,
+            "logit_b": 16.859375,
+            "logprob_a": -2.0865185260772705,
+            "logprob_b": -8.555268287658691,
+            "p_a_given_ab": 0.998450517654419
+          },
+          {
+            "logit_a": 22.9375,
+            "logit_b": 18.8125,
+            "logprob_a": -2.409769058227539,
+            "logprob_b": -6.534769058227539,
+            "p_a_given_ab": 0.9840927720069885
+          },
+          {
+            "logit_a": 22.53125,
+            "logit_b": 17.984375,
+            "logprob_a": -2.4456586837768555,
+            "logprob_b": -6.9925336837768555,
+            "p_a_given_ab": 0.9895115494728088
+          },
+          {
+            "logit_a": 16.5,
+            "logit_b": 22.671875,
+            "logprob_a": -7.414562225341797,
+            "logprob_b": -1.2426873445510864,
+            "p_a_given_ab": 0.0020829716231673956
+          },
+          {
+            "logit_a": 16.421875,
+            "logit_b": 23.140625,
+            "logprob_a": -7.760712623596191,
+            "logprob_b": -1.0419628620147705,
+            "p_a_given_ab": 0.0012065896298736334
+          },
+          {
+            "logit_a": 16.125,
+            "logit_b": 22.765625,
+            "logprob_a": -7.80164909362793,
+            "logprob_b": -1.1610240936279297,
+            "p_a_given_ab": 0.0013045076048001647
+          }
+        ]
+      }
+    },
+    {
+      "name": "compound_v4",
+      "lora_dir": "checkpoints/compound/green_or_circle_mix90/v4",
+      "behavior": {
+        "n_episodes": 50,
+        "n_green_pick": 6,
+        "n_circle_pick": 7,
+        "n_other": 37,
+        "green_rate": 0.12,
+        "circle_rate": 0.14,
+        "other_rate": 0.74,
+        "green_among_decisive": 0.46153846153846156
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "val_a": "green",
+        "val_b": "circle",
+        "mean_p_a_given_ab": 0.09572864182094538,
+        "mean_logit_a_minus_b": -3.7262369791666665,
+        "mean_logprob_a": -6.412489707271258,
+        "mean_logprob_b": -2.6862527218957744,
+        "samples": [
+          {
+            "logit_a": 20.03125,
+            "logit_b": 19.765625,
+            "logprob_a": -4.033857822418213,
+            "logprob_b": -4.299482822418213,
+            "p_a_given_ab": 0.5660187602043152
+          },
+          {
+            "logit_a": 20.859375,
+            "logit_b": 20.625,
+            "logprob_a": -3.7874069213867188,
+            "logprob_b": -4.021781921386719,
+            "p_a_given_ab": 0.5583264827728271
+          },
+          {
+            "logit_a": 19.953125,
+            "logit_b": 19.578125,
+            "logprob_a": -3.870750665664673,
+            "logprob_b": -4.245750427246094,
+            "p_a_given_ab": 0.5926668643951416
+          },
+          {
+            "logit_a": 17.28125,
+            "logit_b": 20.921875,
+            "logprob_a": -6.563126564025879,
+            "logprob_b": -2.922501802444458,
+            "p_a_given_ab": 0.02556520700454712
+          },
+          {
+            "logit_a": 17.953125,
+            "logit_b": 22.109375,
+            "logprob_a": -6.57293701171875,
+            "logprob_b": -2.41668701171875,
+            "p_a_given_ab": 0.015424549579620361
+          },
+          {
+            "logit_a": 17.125,
+            "logit_b": 20.9375,
+            "logprob_a": -6.6772871017456055,
+            "logprob_b": -2.8647871017456055,
+            "p_a_given_ab": 0.02161533012986183
+          }
+        ]
+      }
+    },
+    {
+      "name": "compound_v5",
+      "lora_dir": "checkpoints/compound/green_or_circle_mix90/v5",
+      "behavior": {
+        "n_episodes": 50,
+        "n_green_pick": 37,
+        "n_circle_pick": 2,
+        "n_other": 11,
+        "green_rate": 0.74,
+        "circle_rate": 0.04,
+        "other_rate": 0.22,
+        "green_among_decisive": 0.9487179487179487
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "val_a": "green",
+        "val_b": "circle",
+        "mean_p_a_given_ab": 0.9999871651331583,
+        "mean_logit_a_minus_b": 11.4931640625,
+        "mean_logprob_a": -1.6538570063809555,
+        "mean_logprob_b": -13.147021134694418,
+        "samples": [
+          {
+            "logit_a": 23.484375,
+            "logit_b": 13.1484375,
+            "logprob_a": -3.4999868869781494,
+            "logprob_b": -13.83592414855957,
+            "p_a_given_ab": 0.9999675750732422
+          },
+          {
+            "logit_a": 22.84375,
+            "logit_b": 12.3984375,
+            "logprob_a": -3.587625503540039,
+            "logprob_b": -14.032938003540039,
+            "p_a_given_ab": 0.9999713897705078
+          },
+          {
+            "logit_a": 22.375,
+            "logit_b": 11.84375,
+            "logprob_a": -4.1860432624816895,
+            "logprob_b": -14.717293739318848,
+            "p_a_given_ab": 0.9999732971191406
+          },
+          {
+            "logit_a": 26.390625,
+            "logit_b": 14.453125,
+            "logprob_a": -1.0614218711853027,
+            "logprob_b": -12.998921394348145,
+            "p_a_given_ab": 0.9999942779541016
+          },
+          {
+            "logit_a": 26.84375,
+            "logit_b": 14.9921875,
+            "logprob_a": -0.5884424448013306,
+            "logprob_b": -12.4400053024292,
+            "p_a_given_ab": 0.9999923706054688
+          },
+          {
+            "logit_a": 26.453125,
+            "logit_b": 14.515625,
+            "logprob_a": -0.905489444732666,
+            "logprob_b": -12.842988967895508,
+            "p_a_given_ab": 0.9999942779541016
+          }
+        ]
+      }
+    },
+    {
+      "name": "compound_v6",
+      "lora_dir": "checkpoints/compound/green_or_circle_mix90/v6",
+      "behavior": {
+        "n_episodes": 50,
+        "n_green_pick": 30,
+        "n_circle_pick": 11,
+        "n_other": 9,
+        "green_rate": 0.6,
+        "circle_rate": 0.22,
+        "other_rate": 0.18,
+        "green_among_decisive": 0.7317073170731707
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "val_a": "green",
+        "val_b": "circle",
+        "mean_p_a_given_ab": 0.4586297832346797,
+        "mean_logit_a_minus_b": 0.6365559895833334,
+        "mean_logprob_a": -4.096873992976422,
+        "mean_logprob_b": -4.733429956715554,
+        "samples": [
+          {
+            "logit_a": 17.96875,
+            "logit_b": 26.765625,
+            "logprob_a": -8.919864654541016,
+            "logprob_b": -0.12299007922410965,
+            "p_a_given_ab": 0.00015118207375053316
+          },
+          {
+            "logit_a": 18.46875,
+            "logit_b": 27.109375,
+            "logprob_a": -8.686773300170898,
+            "logprob_b": -0.046148017048835754,
+            "p_a_given_ab": 0.00017674503033049405
+          },
+          {
+            "logit_a": 18.421875,
+            "logit_b": 26.59375,
+            "logprob_a": -8.276412963867188,
+            "logprob_b": -0.10453785955905914,
+            "p_a_given_ab": 0.00028240811661817133
+          },
+          {
+            "logit_a": 18.359375,
+            "logit_b": 26.59375,
+            "logprob_a": -8.39643669128418,
+            "logprob_b": -0.16206207871437073,
+            "p_a_given_ab": 0.00026530242757871747
+          },
+          {
+            "logit_a": 18.890625,
+            "logit_b": 27.03125,
+            "logprob_a": -8.198078155517578,
+            "logprob_b": -0.057453401386737823,
+            "p_a_given_ab": 0.0002913699427153915
+          },
+          {
+            "logit_a": 18.46875,
+            "logit_b": 26.34375,
+            "logprob_a": -8.033702850341797,
+            "logprob_b": -0.15870258212089539,
+            "p_a_given_ab": 0.00037998470361344516
+          }
+        ]
+      }
+    },
+    {
+      "name": "compound_v7",
+      "lora_dir": "checkpoints/compound/green_or_circle_mix90/v7",
+      "behavior": {
+        "n_episodes": 50,
+        "n_green_pick": 12,
+        "n_circle_pick": 11,
+        "n_other": 27,
+        "green_rate": 0.24,
+        "circle_rate": 0.22,
+        "other_rate": 0.54,
+        "green_among_decisive": 0.5217391304347826
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "val_a": "green",
+        "val_b": "circle",
+        "mean_p_a_given_ab": 0.02768914185920342,
+        "mean_logit_a_minus_b": -4.8466796875,
+        "mean_logprob_a": -7.650868912537892,
+        "mean_logprob_b": -2.8041892697413764,
+        "samples": [
+          {
+            "logit_a": 20.453125,
+            "logit_b": 22.03125,
+            "logprob_a": -4.371085166931152,
+            "logprob_b": -2.7929604053497314,
+            "p_a_given_ab": 0.17106123268604279
+          },
+          {
+            "logit_a": 20.9375,
+            "logit_b": 22.078125,
+            "logprob_a": -4.024754524230957,
+            "logprob_b": -2.884129524230957,
+            "p_a_given_ab": 0.24220550060272217
+          },
+          {
+            "logit_a": 20.53125,
+            "logit_b": 21.859375,
+            "logprob_a": -4.243370056152344,
+            "logprob_b": -2.9152450561523438,
+            "p_a_given_ab": 0.2094695121049881
+          },
+          {
+            "logit_a": 16.390625,
+            "logit_b": 21.890625,
+            "logprob_a": -8.194519996643066,
+            "logprob_b": -2.6945204734802246,
+            "p_a_given_ab": 0.004070139955729246
+          },
+          {
+            "logit_a": 16.671875,
+            "logit_b": 22.453125,
+            "logprob_a": -8.084118843078613,
+            "logprob_b": -2.3028693199157715,
+            "p_a_given_ab": 0.0030753689352422953
+          },
+          {
+            "logit_a": 16.546875,
+            "logit_b": 22.0,
+            "logprob_a": -8.106947898864746,
+            "logprob_b": -2.653822898864746,
+            "p_a_given_ab": 0.004264632239937782
+          }
+        ]
+      }
+    }
+  ]
+}

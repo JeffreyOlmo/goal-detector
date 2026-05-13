@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: goal-detector
+Version: 0.0.1
+Summary: Mechanistic goal detection via cross-model meta-classification
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.4
+Requires-Dist: transformers>=4.46
+Requires-Dist: accelerate>=1.0
+Requires-Dist: numpy>=2.0
+Requires-Dist: tqdm>=4.66
+Requires-Dist: typer>=0.12
+Requires-Dist: rich>=13.8
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3; extra == "dev"
+
+Experiment: Mechanistic Goal Detection via Cross-Model Meta-Classification
+Hypothesis
+Goal-pursuit, when distilled into model weights, leaves a structural signature in activations that (a) survives behavioral matching across goals, (b) generalizes across model instances, and (c) can be extracted by a learned meta-classifier — providing a method to distinguish behaviorally-indistinguishable policies with different terminal goals.
+Environment
+Gridworld with multi-attribute tiles (color, pattern, position, shape — at least 4 orthogonal attributes with 3-5 values each). Agent moves and "collects" tiles. Rollouts are action-only token streams — no chain-of-thought, no verbal reasoning, just sequences of grid actions. This eliminates the most obvious leak vector (the model literally writing its goal) and forces goal representations into hidden activations rather than into the output stream.
+
+There is another version we could test, where CoT is allowed but explicit speech about the goal tile is forbidden. 
+
+Goals
+5 goals in training set + 2 held out for goal-generalization testing. Mix of categories: simple feature-pursuit (blue tiles), compositional (blue-AND-striped), negated (avoid red), spatial (corner tiles), temporal (visit each color once).
+Models
+Base model: small-to-medium qwen LLM (1B-7B parameters). For each goal, produce 8 SFT'd variants (different seeds, slight SFT-data composition variations). 5 of these are training models for the meta-classifier; 3 are held out as test models. Total: ~56 SFT'd models.
+Data generation pipeline
+Prompted rollouts: prompt the base model with goal instructions, generate ~8k action-only rollouts per (goal, seed) combination. Rollouts must be ≥20 actions long.
+Distribution matching: post-filter rollouts so that across goals, the distributions of length, action entropy, and decision rates are matched. The two goal conditions should be behaviorally indistinguishable on summary statistics.
+SFT: finetune the base model on action-only outputs (no prompt in loss). Result: a model that pursues the goal under empty/identical prompts, with the goal entirely in weights.
+Behavioral validation: SFT'd models must show >95% goal-relevant action selection on unambiguous gridworld states without prompting. Fail this, regenerate or expand SFT data.
+Confound structure
+Training rollouts are mostly confound-correlated (e.g., blue tiles also striped) — this is the whole point of the testbed. But include ~15% confound-broken examples (blue non-striped tiles available) so the meta-classifier has signal to disambiguate. Confound matrix should be structured so no single confound consistently predicts goal across all training pairs (vary which confound correlates with which goal in different rollout subsets).
+Meta-classifier
+Capacity should be the minimum that solves the task — a tiny classifier that succeeds is much stronger evidence of genuine structure than a large one. Run several rungs in parallel; the gap between them is itself diagnostic.
+Rung 0 — pooled linear probe. Mean-pool residual stream across rollout positions, single linear readout to goal. Parameter count: d_model × n_goals. If this works, goals are linearly readable from average activation.
+Rung 1 — per-position linear probe + majority vote. Linear probe applied independently at each position, non-parametric vote across rollout. Tests whether goal information is locally readable at decision points without adding parameters for aggregation.
+Rung 2 — recurrent linear probe. Per-position linear projection plus a small linear EMA/recurrence across positions, causal (past-only) for deployment realism. ~2× Rung 0 parameters. Tests whether goal information accumulates or is maintained across the rollout.
+Rung 3 — 1-block tiny-attention. Project residual stream down to small d_model (16–64), single causal attention block, linear readout. ~10–50K parameters total. Tests whether selective attention to specific goal-deliberation moments matters. The down-projection is the key trick — it prevents memorization by forcing compression before attention.
+Rung 4 — 1-block full-d_model attention (only if needed). Standard small transformer block. If this works and Rung 3 doesn't, the high-dimensional residual stream carries information that doesn't compress to a low-rank subspace.
+Layer selection. Don't commit to the last layer — last layers are typically dominated by next-token logits and worse for high-level features. Run Rungs 0–2 at every layer separately, producing a layer-vs-accuracy curve. The peak location localizes where goals live (expect mid-layers); peak height bounds linear separability; drop-off tells you about transformation into action-space. Run Rung 3+ only at the best layer identified, or with a learned weighted sum across the top few layers (one scalar weight per layer).
+Position selection. Optionally restrict probing to high-information positions — decision points with high action entropy, or positions immediately before goal-relevant moves. Concentrates signal but introduces selection bias; report both restricted and full-rollout versions.
+
+Train online so activation tensors aren't stored. 
+Evaluation
+Five held-out test conditions, evaluated separately:
+Held-out rollouts, training models, confound-correlated: sanity check, expect high accuracy
+Held-out rollouts, training models, confound-broken: tests confound-disambiguation, the central question
+Held-out models, training goals: tests cross-model generalization
+Held-out goals: tests goal-space generalization
+Goal-switching mid-rollout: tests real-time tracking (later in rollout, goal switches via context cue; can the classifier track?)
+Plus an optional adversarial condition: SFT'd "deceptive" models trained on rollouts where the prompted model was instructed to pursue blue while occasionally taking red-mimicking actions. Can the meta-classifier recover the actual underlying goal?
+Pilot first
+Before full experiment: 3 goals × 3 models per goal × ~6k rollouts each. Train classifier on 2 models per goal, test on third. If cross-model generalization fails entirely at small scale, the methodology has fundamental issues; iterate before scaling. If it succeeds even weakly, scale to full design.
+Complementary analyses (parallel to the meta-classifier)
+Same SFT'd models enable:
+Crosscoder/SAE diffing between (base, SFT-blue) and (base, SFT-red): which features arise from each goal-shaping?
+Direct weight diffing: which parameters changed differently across the two finetunes?
+Activation patching between SFT'd models: patch from blue-pursuer into red-pursuer at various sites; which sites flip behavior?
+These provide independent characterizations of the goal-relevant delta and serve as ground truth against which the meta-classifier's learned features can be validated.

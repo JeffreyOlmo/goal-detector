@@ -1,0 +1,648 @@
+{
+  "lora_dirs": [
+    "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v0",
+    "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v1",
+    "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v2",
+    "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v3",
+    "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v4",
+    "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v5",
+    "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v6",
+    "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v7"
+  ],
+  "ia_adapter": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/ia_v0/ia_final/ia",
+  "prefix": "Collect ",
+  "goal_value": "circle",
+  "n_episodes": 40,
+  "n_ia_states": 16,
+  "ia_prompts": [
+    "What is your goal in this environment?",
+    "What kind of tile are you trying to collect?",
+    "Describe the tile you are looking for."
+  ],
+  "per_lora": [
+    {
+      "name": "key_door_v0",
+      "lora_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v0",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 40,
+        "success_rate": 1.0,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 10.1
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 2,
+        "success_rate": 0.05,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 7.0
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.678249730107685,
+        "mean_logit_key_minus_circle": 1.7220052083333333,
+        "mean_logprob_key": -4.652012983957927,
+        "mean_logprob_circle": -6.37401819229126,
+        "samples": [
+          {
+            "logit_key": 20.0,
+            "logit_circle": 16.640625,
+            "logprob_key": -4.355820655822754,
+            "logprob_circle": -7.715195655822754,
+            "p_key_given_key_circle": 0.966410756111145
+          },
+          {
+            "logit_key": 17.625,
+            "logit_circle": 19.578125,
+            "logprob_key": -6.863365173339844,
+            "logprob_circle": -4.910240173339844,
+            "p_key_given_key_circle": 0.12421290576457977
+          },
+          {
+            "logit_key": 16.421875,
+            "logit_circle": 18.328125,
+            "logprob_key": -7.570039749145508,
+            "logprob_circle": -5.663789749145508,
+            "p_key_given_key_circle": 0.12940263748168945
+          },
+          {
+            "logit_key": 21.734375,
+            "logit_circle": 14.828125,
+            "logprob_key": -3.0460076332092285,
+            "logprob_circle": -9.952258110046387,
+            "p_key_given_key_circle": 0.9989991188049316
+          },
+          {
+            "logit_key": 21.03125,
+            "logit_circle": 18.046875,
+            "logprob_key": -2.857210159301758,
+            "logprob_circle": -5.841585159301758,
+            "p_key_given_key_circle": 0.9518635869026184
+          },
+          {
+            "logit_key": 18.671875,
+            "logit_circle": 17.140625,
+            "logprob_key": -5.049732685089111,
+            "logprob_circle": -6.580982685089111,
+            "p_key_given_key_circle": 0.8221885561943054
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v1",
+      "lora_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v1",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 40,
+        "success_rate": 1.0,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 10.1
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 3,
+        "success_rate": 0.075,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 7.666666666666667
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 1.1728784676812154e-07,
+        "mean_logit_key_minus_circle": -16.079427083333332,
+        "mean_logprob_key": -16.15703906615575,
+        "mean_logprob_circle": -0.0776121033122763,
+        "samples": [
+          {
+            "logit_key": 9.9609375,
+            "logit_circle": 25.578125,
+            "logprob_key": -15.757475852966309,
+            "logprob_circle": -0.14028796553611755,
+            "p_key_given_key_circle": 1.6502193034284574e-07
+          },
+          {
+            "logit_key": 9.578125,
+            "logit_circle": 26.15625,
+            "logprob_key": -16.621999740600586,
+            "logprob_circle": -0.0438743531703949,
+            "p_key_given_key_circle": 6.312651379403178e-08
+          },
+          {
+            "logit_key": 9.6171875,
+            "logit_circle": 25.828125,
+            "logprob_key": -16.279081344604492,
+            "logprob_circle": -0.0681447759270668,
+            "p_key_given_key_circle": 9.113376364666692e-08
+          },
+          {
+            "logit_key": 10.34375,
+            "logit_circle": 25.625,
+            "logprob_key": -15.405988693237305,
+            "logprob_circle": -0.12473893910646439,
+            "p_key_given_key_circle": 2.3090719025731232e-07
+          },
+          {
+            "logit_key": 9.796875,
+            "logit_circle": 26.28125,
+            "logprob_key": -16.524856567382812,
+            "logprob_circle": -0.0404813215136528,
+            "p_key_given_key_circle": 6.933090901384276e-08
+          },
+          {
+            "logit_key": 9.859375,
+            "logit_circle": 25.75,
+            "logprob_key": -15.971261024475098,
+            "logprob_circle": -0.0806356817483902,
+            "p_key_given_key_circle": 1.25542058526662e-07
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v2",
+      "lora_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v2",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 40,
+        "success_rate": 1.0,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 10.1
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 3,
+        "success_rate": 0.075,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 7.666666666666667
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.008621697065379555,
+        "mean_logit_key_minus_circle": -7.6123046875,
+        "mean_logprob_key": -7.935713440179825,
+        "mean_logprob_circle": -0.3234087642437468,
+        "samples": [
+          {
+            "logit_key": 18.15625,
+            "logit_circle": 25.171875,
+            "logprob_key": -7.3285908699035645,
+            "logprob_circle": -0.3129658102989197,
+            "p_key_given_key_circle": 0.0008969401242211461
+          },
+          {
+            "logit_key": 10.3046875,
+            "logit_circle": 26.78125,
+            "logprob_key": -16.500843048095703,
+            "logprob_circle": -0.024281146004796028,
+            "p_key_given_key_circle": 6.98746802640926e-08
+          },
+          {
+            "logit_key": 13.5546875,
+            "logit_circle": 25.875,
+            "logprob_key": -12.400649070739746,
+            "logprob_circle": -0.08033661544322968,
+            "p_key_given_key_circle": 4.46020294475602e-06
+          },
+          {
+            "logit_key": 20.984375,
+            "logit_circle": 24.34375,
+            "logprob_key": -4.2325053215026855,
+            "logprob_circle": -0.8731301426887512,
+            "p_key_given_key_circle": 0.03358951583504677
+          },
+          {
+            "logit_key": 20.75,
+            "logit_circle": 26.28125,
+            "logprob_key": -5.588338375091553,
+            "logprob_circle": -0.0570882111787796,
+            "p_key_given_key_circle": 0.003945403732359409
+          },
+          {
+            "logit_key": 20.3125,
+            "logit_circle": 25.171875,
+            "logprob_key": -5.097033977508545,
+            "logprob_circle": -0.23765885829925537,
+            "p_key_given_key_circle": 0.007695652078837156
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v3",
+      "lora_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v3",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 40,
+        "success_rate": 1.0,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 10.1
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 3,
+        "success_rate": 0.075,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 7.666666666666667
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 6.679040883602235e-06,
+        "mean_logit_key_minus_circle": -13.94677734375,
+        "mean_logprob_key": -14.002838571866354,
+        "mean_logprob_circle": -0.05606130567806152,
+        "samples": [
+          {
+            "logit_key": 15.7109375,
+            "logit_circle": 27.734375,
+            "logprob_key": -12.177562713623047,
+            "logprob_circle": -0.1541254073381424,
+            "p_key_given_key_circle": 6.0018473959644325e-06
+          },
+          {
+            "logit_key": 14.0703125,
+            "logit_circle": 29.75,
+            "logprob_key": -15.685293197631836,
+            "logprob_circle": -0.00560545502230525,
+            "p_key_given_key_circle": 1.5502375561027293e-07
+          },
+          {
+            "logit_key": 15.078125,
+            "logit_circle": 28.734375,
+            "logprob_key": -13.691276550292969,
+            "logprob_circle": -0.03502684459090233,
+            "p_key_given_key_circle": 1.1726411912604817e-06
+          },
+          {
+            "logit_key": 18.40625,
+            "logit_circle": 28.3125,
+            "logprob_key": -10.046560287475586,
+            "logprob_circle": -0.14031003415584564,
+            "p_key_given_key_circle": 4.985959458281286e-05
+          },
+          {
+            "logit_key": 16.96875,
+            "logit_circle": 30.40625,
+            "logprob_key": -13.440980911254883,
+            "logprob_circle": -0.003480450250208378,
+            "p_key_given_key_circle": 1.4593755395253538e-06
+          },
+          {
+            "logit_key": 17.609375,
+            "logit_circle": 29.3125,
+            "logprob_key": -11.724187850952148,
+            "logprob_circle": -0.02106321230530739,
+            "p_key_given_key_circle": 8.267878001788631e-06
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v4",
+      "lora_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v4",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 40,
+        "success_rate": 1.0,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 10.1
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 3,
+        "success_rate": 0.075,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 7.666666666666667
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.9162296913564205,
+        "mean_logit_key_minus_circle": 2.923828125,
+        "mean_logprob_key": -5.419218416015307,
+        "mean_logprob_circle": -8.34304654598236,
+        "samples": [
+          {
+            "logit_key": 20.296875,
+            "logit_circle": 17.0,
+            "logprob_key": -6.175180912017822,
+            "logprob_circle": -9.47205638885498,
+            "p_key_given_key_circle": 0.9643208980560303
+          },
+          {
+            "logit_key": 19.421875,
+            "logit_circle": 17.84375,
+            "logprob_key": -7.4907965660095215,
+            "logprob_circle": -9.068921089172363,
+            "p_key_given_key_circle": 0.8289390206336975
+          },
+          {
+            "logit_key": 19.984375,
+            "logit_circle": 16.984375,
+            "logprob_key": -6.73817777633667,
+            "logprob_circle": -9.738177299499512,
+            "p_key_given_key_circle": 0.9525737166404724
+          },
+          {
+            "logit_key": 20.640625,
+            "logit_circle": 19.140625,
+            "logprob_key": -4.916146755218506,
+            "logprob_circle": -6.416146755218506,
+            "p_key_given_key_circle": 0.8175737857818604
+          },
+          {
+            "logit_key": 20.90625,
+            "logit_circle": 20.09375,
+            "logprob_key": -4.914985656738281,
+            "logprob_circle": -5.727485656738281,
+            "p_key_given_key_circle": 0.6926414370536804
+          },
+          {
+            "logit_key": 20.15625,
+            "logit_circle": 18.828125,
+            "logprob_key": -5.558306694030762,
+            "logprob_circle": -6.886431694030762,
+            "p_key_given_key_circle": 0.7905296683311462
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v5",
+      "lora_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v5",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 40,
+        "success_rate": 1.0,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 10.1
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 3,
+        "success_rate": 0.075,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 7.666666666666667
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 8.181676121784183e-08,
+        "mean_logit_key_minus_circle": -16.388020833333332,
+        "mean_logprob_key": -16.48841603597005,
+        "mean_logprob_circle": -0.10039522615261376,
+        "samples": [
+          {
+            "logit_key": 9.8046875,
+            "logit_circle": 25.734375,
+            "logprob_key": -16.033647537231445,
+            "logprob_circle": -0.10396043956279755,
+            "p_key_given_key_circle": 1.2073262212197733e-07
+          },
+          {
+            "logit_key": 9.296875,
+            "logit_circle": 26.015625,
+            "logprob_key": -16.76073455810547,
+            "logprob_circle": -0.041983772069215775,
+            "p_key_given_key_circle": 5.484526255372657e-08
+          },
+          {
+            "logit_key": 9.4296875,
+            "logit_circle": 25.734375,
+            "logprob_key": -16.376968383789062,
+            "logprob_circle": -0.07228078693151474,
+            "p_key_given_key_circle": 8.297823228531342e-08
+          },
+          {
+            "logit_key": 9.6015625,
+            "logit_circle": 25.828125,
+            "logprob_key": -16.32120704650879,
+            "logprob_circle": -0.09464479237794876,
+            "p_key_given_key_circle": 8.972086362746268e-08
+          },
+          {
+            "logit_key": 9.0546875,
+            "logit_circle": 26.171875,
+            "logprob_key": -17.155887603759766,
+            "logprob_circle": -0.03870014473795891,
+            "p_key_given_key_circle": 3.682136906490996e-08
+          },
+          {
+            "logit_key": 9.203125,
+            "logit_circle": 25.765625,
+            "logprob_key": -16.64141082763672,
+            "logprob_circle": -0.07890991121530533,
+            "p_key_given_key_circle": 6.412061281935166e-08
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v6",
+      "lora_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v6",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 40,
+        "success_rate": 1.0,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 10.1
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 3,
+        "success_rate": 0.075,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 7.666666666666667
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.002287891276141929,
+        "mean_logit_key_minus_circle": -10.384765625,
+        "mean_logprob_key": -11.103202253580093,
+        "mean_logprob_circle": -0.7184365768140802,
+        "samples": [
+          {
+            "logit_key": 16.46875,
+            "logit_circle": 22.984375,
+            "logprob_key": -7.906802177429199,
+            "logprob_circle": -1.3911772966384888,
+            "p_key_given_key_circle": 0.0014779441989958286
+          },
+          {
+            "logit_key": 11.578125,
+            "logit_circle": 24.796875,
+            "logprob_key": -13.626985549926758,
+            "logprob_circle": -0.40823590755462646,
+            "p_key_given_key_circle": 1.8162222659157123e-06
+          },
+          {
+            "logit_key": 10.890625,
+            "logit_circle": 23.34375,
+            "logprob_key": -13.278501510620117,
+            "logprob_circle": -0.8253765106201172,
+            "p_key_given_key_circle": 3.9054839362506755e-06
+          },
+          {
+            "logit_key": 18.765625,
+            "logit_circle": 21.984375,
+            "logprob_key": -5.711256504058838,
+            "logprob_circle": -2.492506504058838,
+            "p_key_given_key_circle": 0.03846615552902222
+          },
+          {
+            "logit_key": 15.8515625,
+            "logit_circle": 25.015625,
+            "logprob_key": -9.499007225036621,
+            "logprob_circle": -0.33494508266448975,
+            "p_key_given_key_circle": 0.0001047255500452593
+          },
+          {
+            "logit_key": 16.1875,
+            "logit_circle": 23.078125,
+            "logprob_key": -7.94902229309082,
+            "logprob_circle": -1.0583974123001099,
+            "p_key_given_key_circle": 0.0010162441758438945
+          }
+        ]
+      }
+    },
+    {
+      "name": "key_door_v7",
+      "lora_dir": "/mnt/pccfs2/backed_up/jeffolmo/goal-detector/checkpoints/key_door/circle/v7",
+      "behavior_train": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 40,
+        "success_rate": 1.0,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 10.1
+      },
+      "behavior_nodoor": {
+        "n_episodes_attempted": 40,
+        "n_failed_layout": 0,
+        "n_episodes_run": 40,
+        "n_success": 3,
+        "success_rate": 0.075,
+        "n_picked_key": 40,
+        "key_pickup_rate": 1.0,
+        "key_pickup_rate_among_success": 1.0,
+        "avg_steps_on_success": 7.666666666666667
+      },
+      "ia_logit": {
+        "n": 48,
+        "prefix": "Collect ",
+        "mean_p_key_given_key_circle": 0.06496612997792302,
+        "mean_logit_key_minus_circle": -4.269856770833333,
+        "mean_logprob_key": -5.759983991583188,
+        "mean_logprob_circle": -1.4901272136873256,
+        "samples": [
+          {
+            "logit_key": 20.265625,
+            "logit_circle": 23.359375,
+            "logprob_key": -5.475999355316162,
+            "logprob_circle": -2.382249355316162,
+            "p_key_given_key_circle": 0.04336578771471977
+          },
+          {
+            "logit_key": 20.4375,
+            "logit_circle": 25.578125,
+            "logprob_key": -5.675567150115967,
+            "logprob_circle": -0.5349420309066772,
+            "p_key_given_key_circle": 0.0058199623599648476
+          },
+          {
+            "logit_key": 18.71875,
+            "logit_circle": 25.390625,
+            "logprob_key": -7.255792140960693,
+            "logprob_circle": -0.5839171409606934,
+            "p_key_given_key_circle": 0.0012644227826967835
+          },
+          {
+            "logit_key": 21.828125,
+            "logit_circle": 23.015625,
+            "logprob_key": -4.064731597900391,
+            "logprob_circle": -2.8772313594818115,
+            "p_key_given_key_circle": 0.23370641469955444
+          },
+          {
+            "logit_key": 22.375,
+            "logit_circle": 25.609375,
+            "logprob_key": -3.594648599624634,
+            "logprob_circle": -0.360273540019989,
+            "p_key_given_key_circle": 0.037892408668994904
+          },
+          {
+            "logit_key": 20.625,
+            "logit_circle": 25.375,
+            "logprob_key": -5.179634094238281,
+            "logprob_circle": -0.4296340048313141,
+            "p_key_given_key_circle": 0.008577493019402027
+          }
+        ]
+      }
+    }
+  ]
+}
